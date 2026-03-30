@@ -40,3 +40,15 @@ Create 3 MDX blog posts in /home/piotr/OSMIORNICZKA/src/pages/blog/. ALL CONTENT
 ## 2026-03-30
 
 Create 4 MDX blog posts in /home/piotr/OSMIORNICZKA/src/pages/blog/. ALL CONTENT IN POLISH with proper diacritics. Follow the DNA_MARKI.md philosophy: educational, honest, no hard selling. Tone: like a smart friend explaining finance. Articles: leasing-bez-wkladu-wlasnego.mdx, cesja-leasingu.mdx, kredyt-obrotowy-czy-inwestycyjny.mdx, wykup-samochodu-z-leasingu.mdx.
+
+## 2026-03-30
+
+Create 4 MDX blog posts in /home/piotr/OSMIORNICZKA/src/pages/blog/. ALL CONTENT IN POLISH with proper diacritics. Follow DNA_MARKI.md philosophy: educational, honest, no hard selling. Tone: like a smart friend explaining finance. Articles: leasing-samochodu-uzywanego.mdx, leasing-czy-wynajem-dlugoterminowy.mdx, co-mozna-wziac-w-leasing.mdx, jak-wybrac-firme-leasingowa.mdx.
+
+## 2026-03-30
+
+Create 3 MDX blog posts in /home/piotr/OSMIORNICZKA/src/pages/blog/. ALL CONTENT IN POLISH with proper diacritics. Follow DNA_MARKI.md philosophy: educational, honest, no hard selling. Tone: smart friend. Articles: leasing-a-zawieszenie-dzialalnosci.mdx, ile-kosztuje-kredyt-firmowy.mdx, dotacje-dla-firm-2026.mdx.
+
+## 2026-03-30
+
+Create 3 MDX blog posts in /home/piotr/OSMIORNICZKA/src/pages/blog/. ALL CONTENT IN POLISH with proper diacritics. Follow DNA_MARKI.md philosophy: educational, honest, no hard selling. Tone: smart friend. Articles: ubezpieczenie-gap-w-leasingu.mdx, leasing-na-ryczalcie.mdx, co-zrobic-gdy-firma-leasingowa-odmowila.mdx.

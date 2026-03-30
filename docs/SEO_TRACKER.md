@@ -1,0 +1,93 @@
+# SEO Tracker — LeasingPoProstu.pl
+
+Data utworzenia: 2026-03-30
+
+---
+
+## Blog — frazy docelowe (23 artykuły)
+
+| # | Artykuł | Fraza docelowa | Konkurencja | Pozycja | Uwagi |
+|---|---|---|---|---|---|
+| 1 | [Leasing operacyjny vs finansowy](/blog/leasing-operacyjny-vs-finansowy/) | leasing operacyjny a finansowy | ŚREDNIA | - | porównanie, featured snippet |
+| 2 | [Leasing czy kredyt](/blog/leasing-czy-kredyt-co-sie-oplaca/) | leasing czy kredyt co się opłaca | ŚREDNIA | - | porównanie kosztów |
+| 3 | [Jak wziąć leasing na firmę](/blog/jak-wziac-leasing-na-firme/) | jak wziąć leasing na firmę | NISKA | - | poradnik krok po kroku |
+| 4 | [Ile kosztuje leasing samochodu](/blog/ile-kosztuje-leasing-samochodu/) | ile kosztuje leasing samochodu | ŚREDNIA | - | tabele, ukryte koszty |
+| 5 | [Leasing dla nowej firmy](/blog/leasing-dla-nowej-firmy/) | leasing dla nowej firmy | NISKA | - | warunki, porady |
+| 6 | [Jakie dokumenty do leasingu](/blog/jakie-dokumenty-do-leasingu/) | jakie dokumenty do leasingu | NISKA | - | per forma prawna |
+| 7 | [Co to jest faktoring](/blog/co-to-jest-faktoring/) | co to jest faktoring | NISKA | - | typy, koszty, porównanie |
+| 8 | [Gwarancja de minimis BGK](/blog/gwarancja-de-minimis-bgk/) | gwarancja de minimis BGK | NISKA | - | parametry, proces |
+| 9 | [Leasing samochodu elektrycznego](/blog/leasing-samochodu-elektrycznego/) | leasing samochodu elektrycznego | ŚREDNIA | - | limit 225k, dotacje |
+| 10 | [Leasing bez wkładu własnego](/blog/leasing-bez-wkladu-wlasnego/) | leasing bez wkładu własnego | ŚREDNIA | - | warunki, 0% vs 10% vs 20% |
+| 11 | [Cesja leasingu](/blog/cesja-leasingu/) | cesja leasingu | NISKA | - | proces, koszty, podatki |
+| 12 | [Kredyt obrotowy czy inwestycyjny](/blog/kredyt-obrotowy-czy-inwestycyjny/) | kredyt obrotowy czy inwestycyjny | NISKA | - | porównanie, kiedy który |
+| 13 | [Wykup samochodu z leasingu](/blog/wykup-samochodu-z-leasingu/) | wykup samochodu z leasingu | NISKA | - | zasady, podatki, sprzedaż |
+| 14 | [Leasing samochodu używanego](/blog/leasing-samochodu-uzywanego/) | leasing samochodu używanego | ŚREDNIA | - | warunki, nowe vs używane |
+| 15 | [Leasing czy wynajem długoterminowy](/blog/leasing-czy-wynajem-dlugoterminowy/) | leasing czy wynajem długoterminowy | ŚREDNIA | - | porównanie kosztów |
+| 16 | [Co można wziąć w leasing](/blog/co-mozna-wziac-w-leasing/) | co można wziąć w leasing | NISKA | - | lista aktywów, nietypowe |
+| 17 | [Jak wybrać firmę leasingową](/blog/jak-wybrac-firme-leasingowa/) | jak wybrać firmę leasingową | NISKA | - | 7 kryteriów, red flags |
+| 18 | [Leasing a zawieszenie działalności](/blog/leasing-a-zawieszenie-dzialalnosci/) | leasing a zawieszenie działalności | NISKA | - | opcje, konsekwencje |
+| 19 | [Ile kosztuje kredyt firmowy](/blog/ile-kosztuje-kredyt-firmowy/) | ile kosztuje kredyt firmowy | NISKA | - | składniki kosztu, RRSO |
+| 20 | [Dotacje dla firm 2026](/blog/dotacje-dla-firm-2026/) | dotacje dla firm 2026 | ŚREDNIA | - | programy, dotacja+leasing |
+| 21 | [Ubezpieczenie GAP w leasingu](/blog/ubezpieczenie-gap-w-leasingu/) | ubezpieczenie GAP w leasingu | NISKA | - | co to, koszty, kiedy warto |
+| 22 | [Leasing na ryczałcie](/blog/leasing-na-ryczalcie/) | leasing na ryczałcie | NISKA | - | odliczenia, kiedy zmienić |
+| 23 | [Co zrobić gdy odmówiono leasingu](/blog/co-zrobic-gdy-firma-leasingowa-odmowila/) | odmowa leasingu co dalej | NISKA | - | 5 kroków, przyczyny |
+
+---
+
+## Strony usługowe — frazy docelowe
+
+| Strona | Fraza docelowa | Konkurencja |
+|---|---|---|
+| /leasing/samochody/ | leasing samochodu na firmę | WYSOKA |
+| /leasing/maszyny/ | leasing maszyn i urządzeń | WYSOKA |
+| /leasing/it-sprzet/ | leasing sprzętu IT | ŚREDNIA |
+| /leasing/fotowoltaika/ | leasing fotowoltaiki dla firm | ŚREDNIA |
+| /leasing/nieruchomosci/ | leasing nieruchomości | ŚREDNIA |
+| /leasing/zwrotny/ | leasing zwrotny | ŚREDNIA |
+| /kredyty/obrotowy/ | kredyt obrotowy dla firm | WYSOKA |
+| /kredyty/inwestycyjny/ | kredyt inwestycyjny dla firm | WYSOKA |
+| /kredyty/na-start/ | kredyt dla nowej firmy | ŚREDNIA |
+| /kredyty/z-gwarancja-bgk/ | gwarancja de minimis | ŚREDNIA |
+| /faktoring/ | faktoring dla firm | WYSOKA |
+| /kalkulator-leasingu | kalkulator leasingu | WYSOKA |
+
+---
+
+## Strony "dla kogo" — frazy docelowe
+
+| Strona | Fraza docelowa | Konkurencja |
+|---|---|---|
+| /dla-kogo/jdg/ | leasing dla JDG | ŚREDNIA |
+| /dla-kogo/spolka-zoo/ | leasing dla spółki z o.o. | ŚREDNIA |
+| /dla-kogo/nowa-firma/ | leasing dla nowych firm | ŚREDNIA |
+| /dla-kogo/ryczalt/ | leasing na ryczałcie | NISKA |
+| /dla-kogo/duze-firmy/ | leasing dla dużych firm | NISKA |
+
+---
+
+## Jak monitorować
+
+1. **Google Search Console** — zgłoś sitemap (`https://leasingpoprostu.pl/sitemap-index.xml`) w pierwszym dniu po deployu
+2. **Kolumna "Pozycja"** — uzupełniaj co 2 tygodnie na podstawie danych z GSC (Wydajność → Zapytania)
+3. **Priorytet optymalizacji:** artykuły na pozycjach 5-20 — tu najłatwiej podskoczyć wyżej
+4. **Nowe artykuły:** dodawaj 2-4 miesięcznie pod frazy, które jeszcze nie rankują
+
+---
+
+## Frazy do pokrycia w przyszłości (nie mamy jeszcze artykułów)
+
+### Wysoki priorytet
+- jak rozliczyć leasing w kosztach firmy
+- jak negocjować warunki leasingu
+- jak zakończyć umowę leasingu przed czasem
+- ile VAT można odliczyć od leasingu samochodu
+- nowe limity leasingu samochodów 2026
+- ranking firm leasingowych 2026
+
+### Średni priorytet
+- leasing maszyn budowlanych
+- leasing ciągnika rolniczego
+- leasing wózka widłowego
+- faktoring dla małych firm
+- mikropożyczka dla firm
+- kredyt firmowy bez zabezpieczeń
