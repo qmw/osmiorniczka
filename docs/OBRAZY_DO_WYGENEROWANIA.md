@@ -3,8 +3,8 @@
 ## Instrukcja
 
 - **Format:** PNG, przezroczyste tło (lub jasne pastelowe)
-- **Rozmiar header:** 1200x630 px (proporcje OG image, hero artykułu)
-- **Rozmiar środek:** 800x500 px (ilustracja w treści)
+- **Rozmiar header:** 1200x800 px (proporcje 3:2, hero artykułu)
+- **Rozmiar środek:** 900x600 px (proporcje 3:2, ilustracja w treści)
 - **Styl referencyjny:** użyj logo Ośmiorniczki (`public/logo.svg` lub `public/osmiorniczka_bg.png`) jako reference image w Nano Banana
 - **Styl ogólny:** flat illustration, pastelowe kolory (róż, teal #0EA5A3, coral #FF8B6A), kawaii vibes, czyste tło, bez tekstu na obrazku
 - **Umieszczenie:** folder `public/blog/` — po wygenerowaniu daj znać, podepnę pod artykuły
@@ -150,7 +150,7 @@
 
 ## Checklist
 
-### Headery (1200x630 px)
+### Headery (1200x800 px, 3:2)
 - [ ] ile-kosztuje-leasing-samochodu.png
 - [ ] leasing-dla-nowej-firmy.png
 - [ ] jakie-dokumenty-do-leasingu.png
@@ -165,7 +165,7 @@
 - [ ] leasing-czy-kredyt-co-sie-oplaca.png
 - [ ] jak-wziac-leasing-na-firme.png
 
-### Środek artykułu (800x500 px)
+### Środek artykułu (900x600 px, 3:2)
 - [ ] ile-kosztuje-leasing-samochodu-koszty.png
 - [ ] leasing-dla-nowej-firmy-tips.png
 - [ ] jakie-dokumenty-do-leasingu-checklist.png
