@@ -26,7 +26,7 @@ const {
 const siteUrl = 'https://osmiorniczka.pl';
 const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
 const fullOgImage = ogImage.startsWith('http') ? ogImage : new URL(ogImage, siteUrl).href;
-const siteName = 'Osmiorniczka.pl';
+const siteName = 'Ośmiorniczka.pl';
 ---
 
 <!DOCTYPE html>
@@ -69,8 +69,8 @@ const siteName = 'Osmiorniczka.pl';
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    "name": "Osmiorniczka - Broker Leasingu i Kredytow",
-    "description": "Niezalezny broker leasingu i kredytow firmowych. Porownujemy oferty 30+ firm leasingowych i bankow.",
+    "name": "Ośmiorniczka - Broker Leasingu i Kredytów",
+    "description": "Niezależny broker leasingu i kredytów firmowych. Porównujemy oferty 30+ firm leasingowych i banków.",
     "url": siteUrl,
     "logo": `${siteUrl}/logo.svg`,
     "telephone": "+48-XXX-XXX-XXX",
@@ -92,7 +92,7 @@ const siteName = 'Osmiorniczka.pl';
   <slot name="header">
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/60">
       <nav class="container-wide flex items-center justify-between h-16 md:h-18">
-        <a href="/" class="flex items-center gap-2 group" aria-label="Strona glowna Osmiorniczka">
+        <a href="/" class="flex items-center gap-2 group" aria-label="Strona główna Ośmiorniczka">
           <svg class="w-9 h-9 text-teal-500 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="20" cy="14" r="10" fill="currentColor" opacity="0.15"/>
             <circle cx="20" cy="14" r="7" fill="currentColor"/>
@@ -108,7 +108,7 @@ const siteName = 'Osmiorniczka.pl';
             <path d="M27 21 Q28 29 29 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
             <path d="M30 20 Q32 28 34 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
           </svg>
-          <span class="font-heading font-bold text-xl text-slate-800">Osmiorniczka</span>
+          <span class="font-heading font-bold text-xl text-slate-800">Ośmiorniczka</span>
         </a>
 
         <!-- Desktop nav -->
@@ -125,10 +125,10 @@ const siteName = 'Osmiorniczka.pl';
           <a href="tel:+48000000000" class="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors">
             <span class="inline-flex items-center gap-1.5">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
-              Zadzwon
+              Zadzwoń
             </span>
           </a>
-          <a href="/kontakt/" class="btn-primary text-sm !py-2.5 !px-5">Bezplatna konsultacja</a>
+          <a href="/kontakt/" class="btn-primary text-sm !py-2.5 !px-5">Bezpłatna konsultacja</a>
         </div>
 
         <!-- Mobile hamburger -->
@@ -148,7 +148,7 @@ const siteName = 'Osmiorniczka.pl';
           <a href="/faktoring/" class="px-3 py-2.5 text-sm font-medium text-slate-600 hover:text-teal-600 hover:bg-teal-50/50 rounded-lg">Faktoring</a>
           <a href="/blog/" class="px-3 py-2.5 text-sm font-medium text-slate-600 hover:text-teal-600 hover:bg-teal-50/50 rounded-lg">Blog</a>
           <a href="/o-mnie/" class="px-3 py-2.5 text-sm font-medium text-slate-600 hover:text-teal-600 hover:bg-teal-50/50 rounded-lg">O mnie</a>
-          <a href="/kontakt/" class="btn-primary text-sm mt-2 text-center">Bezplatna konsultacja</a>
+          <a href="/kontakt/" class="btn-primary text-sm mt-2 text-center">Bezpłatna konsultacja</a>
         </div>
       </div>
     </header>
@@ -176,10 +176,10 @@ const siteName = 'Osmiorniczka.pl';
               <path d="M27 21 Q28 29 29 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
               <path d="M30 20 Q32 28 34 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
             </svg>
-            <span class="font-heading font-bold text-lg text-white">Osmiorniczka</span>
+            <span class="font-heading font-bold text-lg text-white">Ośmiorniczka</span>
           </div>
-          <p class="text-sm text-slate-400 mb-4">Niezalezny broker leasingu i kredytow firmowych. Porownujemy oferty 30+ firm leasingowych i bankow — znajdziemy najtansza.</p>
-          <p class="text-xs text-slate-500">"Wiele ramion, jedno rozwiazanie"</p>
+          <p class="text-sm text-slate-400 mb-4">Niezależny broker leasingu i kredytów firmowych. Porównujemy oferty 30+ firm leasingowych i banków — znajdziemy najtańszą.</p>
+          <p class="text-xs text-slate-500">"Wiele ramion, jedno rozwiązanie"</p>
         </div>
 
         <!-- Leasing -->
@@ -188,9 +188,9 @@ const siteName = 'Osmiorniczka.pl';
           <ul class="space-y-2 text-sm">
             <li><a href="/leasing/samochody/" class="hover:text-teal-400 transition-colors">Leasing samochodu</a></li>
             <li><a href="/leasing/maszyny/" class="hover:text-teal-400 transition-colors">Leasing maszyn</a></li>
-            <li><a href="/leasing/it-sprzet/" class="hover:text-teal-400 transition-colors">Leasing sprzetu IT</a></li>
+            <li><a href="/leasing/it-sprzet/" class="hover:text-teal-400 transition-colors">Leasing sprzętu IT</a></li>
             <li><a href="/leasing/fotowoltaika/" class="hover:text-teal-400 transition-colors">Leasing fotowoltaiki</a></li>
-            <li><a href="/leasing/nieruchomosci/" class="hover:text-teal-400 transition-colors">Leasing nieruchomosci</a></li>
+            <li><a href="/leasing/nieruchomosci/" class="hover:text-teal-400 transition-colors">Leasing nieruchomości</a></li>
             <li><a href="/leasing/zwrotny/" class="hover:text-teal-400 transition-colors">Leasing zwrotny</a></li>
           </ul>
         </div>
@@ -221,9 +221,9 @@ const siteName = 'Osmiorniczka.pl';
       </div>
 
       <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-xs text-slate-500">&copy; {new Date().getFullYear()} Osmiorniczka.pl — Niezalezny broker leasingu i kredytow. Wszelkie prawa zastrzezone.</p>
+        <p class="text-xs text-slate-500">&copy; {new Date().getFullYear()} Ośmiorniczka.pl — Niezależny broker leasingu i kredytów. Wszelkie prawa zastrzeżone.</p>
         <div class="flex gap-6 text-xs text-slate-500">
-          <a href="/polityka-prywatnosci/" class="hover:text-slate-300 transition-colors">Polityka prywatnosci</a>
+          <a href="/polityka-prywatnosci/" class="hover:text-slate-300 transition-colors">Polityka prywatności</a>
           <a href="/regulamin/" class="hover:text-slate-300 transition-colors">Regulamin</a>
         </div>
       </div>

@@ -4,15 +4,15 @@ import LeasingCalculator from '../components/LeasingCalculator';
 ---
 
 <BaseLayout
-  title="Kalkulator Leasingu 2026 — Oblicz Rate Online | Osmiorniczka"
-  description="Darmowy kalkulator leasingu online. Oblicz miesieczna rate leasingu operacyjnego i finansowego. Porownaj leasing z kredytem firmowym. Szybko i bez zobowiazan."
+  title="Kalkulator Leasingu 2026 — Oblicz Ratę Online | Ośmiorniczka"
+  description="Darmowy kalkulator leasingu online. Oblicz miesięczną ratę leasingu operacyjnego i finansowego. Porównaj leasing z kredytem firmowym. Szybko i bez zobowiązań."
 >
   <section class="section-padding bg-[#FAFBFC]">
     <div class="container-wide">
       <div class="text-center mb-12">
-        <div class="badge mb-4">Darmowe narzedzie</div>
+        <div class="badge mb-4">Darmowe narzędzie</div>
         <h1 class="text-4xl md:text-5xl font-heading font-bold text-slate-900 mb-4">Kalkulator leasingu</h1>
-        <p class="text-lg text-slate-500 max-w-2xl mx-auto">Oblicz szacunkowa rate leasingu i porownaj ja z kredytem firmowym. Kalkulator jest calkowicie darmowy — bez rejestracji.</p>
+        <p class="text-lg text-slate-500 max-w-2xl mx-auto">Oblicz szacunkową ratę leasingu i porównaj ją z kredytem firmowym. Kalkulator jest całkowicie darmowy — bez rejestracji.</p>
       </div>
 
       <LeasingCalculator client:visible />
@@ -22,19 +22,19 @@ import LeasingCalculator from '../components/LeasingCalculator';
   <!-- SEO content below calculator -->
   <section class="section-padding bg-white">
     <div class="container-narrow prose">
-      <h2>Jak korzystac z kalkulatora leasingu?</h2>
-      <p>Nasz kalkulator leasingu pozwala szybko oszacowac miesieczna rate leasingowa. Wystarczy podac wartosc netto przedmiotu, wysokosc wkladu wlasnego, okres leasingu i wybrac rodzaj leasingu (operacyjny lub finansowy).</p>
+      <h2>Jak korzystać z kalkulatora leasingu?</h2>
+      <p>Nasz kalkulator leasingu pozwala szybko oszacować miesięczną ratę leasingową. Wystarczy podać wartość netto przedmiotu, wysokość wkładu własnego, okres leasingu i wybrać rodzaj leasingu (operacyjny lub finansowy).</p>
 
-      <h3>Co wplywana rate leasingu?</h3>
+      <h3>Co wpływa na ratę leasingu?</h3>
       <ul>
-        <li><strong>Wartosc przedmiotu</strong> — im wyzsza wartosc, tym wyzsza rata, ale czesto lepsze warunki procentowe</li>
-        <li><strong>Wklad wlasny</strong> — wyzszy wklad = nizsza rata. Minimum 0-10% w zaleznosci od firmy leasingowej</li>
-        <li><strong>Okres leasingu</strong> — dluzszy okres = nizsza rata miesieczna, ale wyzszy koszt calkowity</li>
-        <li><strong>Oprocentowanie</strong> — zalezy od scoringu klienta, rodzaju przedmiotu i firmy leasingowej</li>
-        <li><strong>Wartosc wykupu</strong> — w leasingu operacyjnym moze wynosic 1-15% wartosci poczatkowej</li>
+        <li><strong>Wartość przedmiotu</strong> — im wyższa wartość, tym wyższa rata, ale często lepsze warunki procentowe</li>
+        <li><strong>Wkład własny</strong> — wyższy wkład = niższa rata. Minimum 0-10% w zależności od firmy leasingowej</li>
+        <li><strong>Okres leasingu</strong> — dłuższy okres = niższa rata miesięczna, ale wyższy koszt całkowity</li>
+        <li><strong>Oprocentowanie</strong> — zależy od scoringu klienta, rodzaju przedmiotu i firmy leasingowej</li>
+        <li><strong>Wartość wykupu</strong> — w leasingu operacyjnym może wynosić 1-15% wartości początkowej</li>
       </ul>
 
-      <h3>Leasing operacyjny vs finansowy — roznice</h3>
+      <h3>Leasing operacyjny vs finansowy — różnice</h3>
       <table>
         <thead>
           <tr>
@@ -46,13 +46,13 @@ import LeasingCalculator from '../components/LeasingCalculator';
         <tbody>
           <tr>
             <td>Rata w kosztach</td>
-            <td>Cala rata netto</td>
-            <td>Tylko czesc odsetkowa</td>
+            <td>Cała rata netto</td>
+            <td>Tylko część odsetkowa</td>
           </tr>
           <tr>
             <td>Odliczenie VAT</td>
             <td>Tak (100% lub 50% dla aut)</td>
-            <td>Caly VAT na poczatku</td>
+            <td>Cały VAT na początku</td>
           </tr>
           <tr>
             <td>Amortyzacja</td>
@@ -62,63 +62,63 @@ import LeasingCalculator from '../components/LeasingCalculator';
           <tr>
             <td>Wykup</td>
             <td>Opcjonalny, 1-15%</td>
-            <td>Automatyczny przeniesienie</td>
+            <td>Automatyczne przeniesienie</td>
           </tr>
           <tr>
             <td>Minimalny okres</td>
-            <td>24 miesiace (40% amortyzacji)</td>
+            <td>24 miesiące (40% amortyzacji)</td>
             <td>Brak ustawowego minimum</td>
           </tr>
           <tr>
             <td>Dla kogo lepszy</td>
-            <td>Wiekszosc firm (optymalny podatkowo)</td>
-            <td>Firmy chcace byc wlascicielem od razu</td>
+            <td>Większość firm (optymalny podatkowo)</td>
+            <td>Firmy chcące być właścicielem od razu</td>
           </tr>
         </tbody>
       </table>
 
       <h3>Ile kosztuje leasing samochodu w 2026?</h3>
-      <p>Przykladowe raty leasingu samochodu o wartosci 100 000 zl netto, wklad wlasny 10%, leasing operacyjny:</p>
+      <p>Przykładowe raty leasingu samochodu o wartości 100 000 zł netto, wkład własny 10%, leasing operacyjny:</p>
       <table>
         <thead>
           <tr>
             <th>Okres</th>
             <th>Rata netto</th>
-            <th>Koszt calkowity</th>
+            <th>Koszt całkowity</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>24 miesiace</td>
-            <td>ok. 4 100 zl</td>
-            <td>ok. 108 400 zl</td>
+            <td>24 miesiące</td>
+            <td>ok. 4 100 zł</td>
+            <td>ok. 108 400 zł</td>
           </tr>
           <tr>
-            <td>36 miesiecy</td>
-            <td>ok. 2 800 zl</td>
-            <td>ok. 110 800 zl</td>
+            <td>36 miesięcy</td>
+            <td>ok. 2 800 zł</td>
+            <td>ok. 110 800 zł</td>
           </tr>
           <tr>
-            <td>48 miesiecy</td>
-            <td>ok. 2 200 zl</td>
-            <td>ok. 115 600 zl</td>
+            <td>48 miesięcy</td>
+            <td>ok. 2 200 zł</td>
+            <td>ok. 115 600 zł</td>
           </tr>
           <tr>
-            <td>60 miesiecy</td>
-            <td>ok. 1 800 zl</td>
-            <td>ok. 118 000 zl</td>
+            <td>60 miesięcy</td>
+            <td>ok. 1 800 zł</td>
+            <td>ok. 118 000 zł</td>
           </tr>
         </tbody>
       </table>
-      <p><em>* Powyzsze kwoty sa orientacyjne. Rzeczywista rata zalezy od oferty konkretnej firmy leasingowej.</em></p>
+      <p><em>* Powyższe kwoty są orientacyjne. Rzeczywista rata zależy od oferty konkretnej firmy leasingowej.</em></p>
 
-      <h2>Dlaczego warto skorzystac z brokera leasingu?</h2>
-      <p>Zamiast samodzielnie obdzwaniac kilkanascie firm leasingowych, mozesz zlecic to nam. Jako niezalezny broker:</p>
+      <h2>Dlaczego warto skorzystać z brokera leasingu?</h2>
+      <p>Zamiast samodzielnie obdzwaniać kilkanaście firm leasingowych, możesz zlecić to nam. Jako niezależny broker:</p>
       <ul>
-        <li>Porownujemy oferty <strong>30+ firm leasingowych</strong> jednoczesnie</li>
-        <li>Negocjujemy lepsze warunki dzieki wolumenowi transakcji</li>
-        <li>Dostarczamy gotowe porownanie — Ty wybierasz najlepsza oferte</li>
-        <li>Nie pobieramy zadnych oplat od klienta</li>
+        <li>Porównujemy oferty <strong>30+ firm leasingowych</strong> jednocześnie</li>
+        <li>Negocjujemy lepsze warunki dzięki wolumenowi transakcji</li>
+        <li>Dostarczamy gotowe porównanie — Ty wybierasz najlepszą ofertę</li>
+        <li>Nie pobieramy żadnych opłat od klienta</li>
       </ul>
     </div>
   </section>
@@ -131,7 +131,7 @@ import LeasingCalculator from '../components/LeasingCalculator';
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Strona glowna",
+        "name": "Strona główna",
         "item": "https://osmiorniczka.pl/"
       },
       {
@@ -147,7 +147,7 @@ import LeasingCalculator from '../components/LeasingCalculator';
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Kalkulator Leasingu Osmiorniczka",
+    "name": "Kalkulator Leasingu Ośmiorniczka",
     "applicationCategory": "FinanceApplication",
     "operatingSystem": "Web",
     "offers": {
@@ -155,6 +155,6 @@ import LeasingCalculator from '../components/LeasingCalculator';
       "price": "0",
       "priceCurrency": "PLN"
     },
-    "description": "Darmowy kalkulator leasingu online. Oblicz rate leasingu operacyjnego i finansowego, porownaj z kredytem firmowym."
+    "description": "Darmowy kalkulator leasingu online. Oblicz ratę leasingu operacyjnego i finansowego, porównaj z kredytem firmowym."
   })} />
 </BaseLayout>

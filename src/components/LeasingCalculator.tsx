@@ -103,7 +103,7 @@ export default function LeasingCalculator() {
           {/* Net value */}
           <div className="mb-5">
             <label className="block text-sm font-medium text-slate-700 mb-1.5">
-              Wartosc przedmiotu netto
+              Wartość przedmiotu netto
             </label>
             <div className="relative">
               <input
@@ -134,7 +134,7 @@ export default function LeasingCalculator() {
           {/* Down payment */}
           <div className="mb-5">
             <label className="block text-sm font-medium text-slate-700 mb-1.5">
-              Wklad wlasny: <span className="font-mono text-teal-600">{downPaymentPct}%</span>
+              Wkład własny: <span className="font-mono text-teal-600">{downPaymentPct}%</span>
               <span className="text-slate-400 ml-1">({formatPLN(netValue * downPaymentPct / 100)})</span>
             </label>
             <input
@@ -223,7 +223,7 @@ export default function LeasingCalculator() {
           </div>
 
           <button onClick={handleCalculate} className="w-full py-4 bg-gradient-to-br from-teal-500 to-teal-700 text-white font-heading font-semibold rounded-xl shadow-lg shadow-teal-500/30 hover:shadow-xl hover:shadow-teal-500/40 hover:-translate-y-0.5 transition-all duration-200 text-lg">
-            Oblicz rate
+            Oblicz ratę
           </button>
         </div>
 
@@ -238,7 +238,7 @@ export default function LeasingCalculator() {
                   <span className="inline-flex items-center px-2.5 py-1 bg-teal-100 text-teal-700 rounded-full text-xs font-semibold">Rekomendowany</span>
                 </div>
                 <div className="mb-4">
-                  <p className="text-sm text-slate-500 mb-1">Rata miesieczna netto</p>
+                  <p className="text-sm text-slate-500 mb-1">Rata miesięczna netto</p>
                   <p className="font-mono font-bold text-4xl text-teal-700">{formatPLN(leasing.monthlyRate)}</p>
                   {leasingType === 'operating' && (
                     <p className="text-sm text-slate-500 mt-1">
@@ -248,15 +248,15 @@ export default function LeasingCalculator() {
                 </div>
                 <div className="grid grid-cols-2 gap-4 pt-4 border-t border-teal-200/60">
                   <div>
-                    <p className="text-xs text-slate-500">Koszt calkowity</p>
+                    <p className="text-xs text-slate-500">Koszt całkowity</p>
                     <p className="font-mono font-semibold text-slate-800">{formatPLN(leasing.totalCost)}</p>
                   </div>
                   <div>
-                    <p className="text-xs text-slate-500">Laczne odsetki</p>
+                    <p className="text-xs text-slate-500">Łączne odsetki</p>
                     <p className="font-mono font-semibold text-slate-800">{formatPLN(leasing.totalInterest)}</p>
                   </div>
                   <div>
-                    <p className="text-xs text-slate-500">Wklad wlasny</p>
+                    <p className="text-xs text-slate-500">Wkład własny</p>
                     <p className="font-mono font-semibold text-slate-800">{formatPLN(netValue * downPaymentPct / 100)}</p>
                   </div>
                   <div>
@@ -268,18 +268,18 @@ export default function LeasingCalculator() {
 
               {/* Credit comparison */}
               <div className="bg-white rounded-2xl border border-slate-200 p-6 md:p-8">
-                <h3 className="font-heading font-bold text-lg text-slate-700 mb-4">Kredyt firmowy (porownanie)</h3>
+                <h3 className="font-heading font-bold text-lg text-slate-700 mb-4">Kredyt firmowy (porównanie)</h3>
                 <div className="mb-4">
-                  <p className="text-sm text-slate-500 mb-1">Rata miesieczna brutto</p>
+                  <p className="text-sm text-slate-500 mb-1">Rata miesięczna brutto</p>
                   <p className="font-mono font-bold text-3xl text-slate-700">{formatPLN(credit.monthlyRate)}</p>
                 </div>
                 <div className="grid grid-cols-2 gap-4 pt-4 border-t border-slate-100">
                   <div>
-                    <p className="text-xs text-slate-500">Koszt calkowity</p>
+                    <p className="text-xs text-slate-500">Koszt całkowity</p>
                     <p className="font-mono font-semibold text-slate-700">{formatPLN(credit.totalCost)}</p>
                   </div>
                   <div>
-                    <p className="text-xs text-slate-500">Laczne odsetki</p>
+                    <p className="text-xs text-slate-500">Łączne odsetki</p>
                     <p className="font-mono font-semibold text-slate-700">{formatPLN(credit.totalInterest)}</p>
                   </div>
                 </div>
@@ -288,7 +288,7 @@ export default function LeasingCalculator() {
               {/* Savings badge */}
               {savings > 0 && (
                 <div className="bg-green-50 rounded-2xl border border-green-200 p-5 text-center">
-                  <p className="text-sm text-green-700 mb-1">Leasing jest tanszy o</p>
+                  <p className="text-sm text-green-700 mb-1">Leasing jest tańszy o</p>
                   <p className="font-mono font-bold text-2xl text-green-700">{formatPLN(savings)}</p>
                 </div>
               )}
@@ -296,13 +296,13 @@ export default function LeasingCalculator() {
               {/* CTA */}
               <div className="bg-gradient-to-br from-coral-50 to-white rounded-2xl border border-coral-200 p-6 text-center">
                 <p className="font-heading font-bold text-lg text-slate-800 mb-2">
-                  Chcesz otrzymac konkretne oferty?
+                  Chcesz otrzymać konkretne oferty?
                 </p>
                 <p className="text-sm text-slate-600 mb-4">
-                  Porownamy oferty 30+ firm leasingowych i bankow. Oddzwonimy w 15 minut.
+                  Porównamy oferty 30+ firm leasingowych i banków. Oddzwonimy w 15 minut.
                 </p>
                 <a href="/kontakt/" className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-3.5 bg-gradient-to-br from-coral-400 to-coral-500 text-white font-heading font-semibold rounded-xl shadow-lg shadow-coral-400/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200">
-                  Bezplatna konsultacja
+                  Bezpłatna konsultacja
                 </a>
               </div>
             </div>
@@ -313,8 +313,8 @@ export default function LeasingCalculator() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V13.5zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V18zm2.498-6.75h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V13.5zm0 2.25h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V18zm2.504-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V18zm2.498-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zM8.25 6h7.5v2.25h-7.5V6zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0012 2.25z"/>
                 </svg>
                 <p className="text-slate-500 font-medium mb-1">Ustaw parametry i kliknij</p>
-                <p className="text-teal-600 font-heading font-bold text-lg">"Oblicz rate"</p>
-                <p className="text-xs text-slate-400 mt-3">Otrzymasz szacunkowa rate leasingu<br/>i porownanie z kredytem firmowym</p>
+                <p className="text-teal-600 font-heading font-bold text-lg">"Oblicz ratę"</p>
+                <p className="text-xs text-slate-400 mt-3">Otrzymasz szacunkową ratę leasingu<br/>i porównanie z kredytem firmowym</p>
               </div>
             </div>
           )}
@@ -322,8 +322,8 @@ export default function LeasingCalculator() {
       </div>
 
       <p className="text-xs text-slate-400 text-center mt-6">
-        * Kalkulator ma charakter orientacyjny. Rzeczywista rata moze sie roznic w zaleznosci od oferty firmy leasingowej, scoringu klienta i dodatkowych warunkow.
-        Skontaktuj sie z nami, aby otrzymac dokadna wycene.
+        * Kalkulator ma charakter orientacyjny. Rzeczywista rata może się różnić w zależności od oferty firmy leasingowej, scoringu klienta i dodatkowych warunków.
+        Skontaktuj się z nami, aby otrzymać dokładną wycenę.
       </p>
     </div>
   );
