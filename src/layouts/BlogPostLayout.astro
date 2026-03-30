@@ -1,0 +1,134 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import ContactForm from '../components/ContactForm';
+
+interface Props {
+  frontmatter: {
+    title: string;
+    description: string;
+    date: string;
+    updated?: string;
+    author?: string;
+    category: string;
+    tags?: string[];
+    readingTime?: string;
+  };
+}
+
+const { frontmatter } = Astro.props;
+const { title, description, date, updated, author = 'Osmiorniczka', category, tags = [], readingTime = '5 min' } = frontmatter;
+
+const categoryMap: Record<string, { label: string; url: string }> = {
+  leasing: { label: 'Leasing', url: '/blog/' },
+  kredyty: { label: 'Kredyty', url: '/blog/' },
+  faktoring: { label: 'Faktoring', url: '/blog/' },
+  porownania: { label: 'Porownania', url: '/blog/' },
+  dotacje: { label: 'Dotacje', url: '/blog/' },
+};
+const cat = categoryMap[category] || { label: category, url: '/blog/' };
+---
+
+<BaseLayout
+  title={`${title} | Osmiorniczka`}
+  description={description}
+  type="article"
+  publishedDate={date}
+  modifiedDate={updated}
+>
+  <!-- Breadcrumbs -->
+  <nav class="bg-white border-b border-slate-100 py-3" aria-label="Breadcrumb">
+    <div class="container-narrow">
+      <ol class="flex items-center gap-2 text-sm text-slate-500 flex-wrap">
+        <li><a href="/" class="hover:text-teal-600 transition-colors">Strona glowna</a></li>
+        <li><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></li>
+        <li><a href="/blog/" class="hover:text-teal-600 transition-colors">Blog</a></li>
+        <li><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></li>
+        <li class="text-slate-800 font-medium truncate max-w-[200px]">{title}</li>
+      </ol>
+    </div>
+  </nav>
+
+  <article class="section-padding bg-white">
+    <div class="container-narrow">
+      <!-- Article header -->
+      <header class="mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="badge">{cat.label}</span>
+          <span class="text-sm text-slate-400">{readingTime} czytania</span>
+        </div>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-slate-900 mb-4 leading-tight">{title}</h1>
+        <p class="text-lg text-slate-500 mb-6">{description}</p>
+        <div class="flex items-center gap-4 text-sm text-slate-500 border-t border-slate-100 pt-4">
+          <span>Autor: <strong class="text-slate-700">{author}</strong></span>
+          <span>Opublikowano: <time datetime={date}>{new Date(date).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}</time></span>
+          {updated && <span>Zaktualizowano: <time datetime={updated}>{new Date(updated).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}</time></span>}
+        </div>
+      </header>
+
+      <!-- Article content -->
+      <div class="prose max-w-none">
+        <slot />
+      </div>
+
+      <!-- Tags -->
+      {tags.length > 0 && (
+        <div class="mt-10 pt-6 border-t border-slate-200">
+          <div class="flex flex-wrap gap-2">
+            {tags.map(tag => (
+              <span class="badge">{tag}</span>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </article>
+
+  <!-- CTA after article -->
+  <section class="py-12 bg-[#FAFBFC]">
+    <div class="container-narrow">
+      <div class="bg-gradient-to-br from-teal-50 via-white to-coral-50 rounded-3xl border border-slate-200 p-8 text-center">
+        <h2 class="text-2xl font-heading font-bold text-slate-900 mb-3">Potrzebujesz indywidualnej analizy?</h2>
+        <p class="text-slate-500 mb-6">Skontaktuj sie z nami — bezplatnie porownamy oferty i znajdziemy najlepsze rozwiazanie dla Twojej firmy.</p>
+        <div class="max-w-lg mx-auto">
+          <ContactForm client:visible variant="compact" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "datePublished": date,
+    "dateModified": updated || date,
+    "author": {
+      "@type": "Organization",
+      "name": "Osmiorniczka.pl"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Osmiorniczka.pl",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://osmiorniczka.pl/logo.svg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://osmiorniczka.pl${Astro.url.pathname}`
+    }
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Strona glowna", "item": "https://osmiorniczka.pl/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://osmiorniczka.pl/blog/" },
+      { "@type": "ListItem", "position": 3, "name": title, "item": `https://osmiorniczka.pl${Astro.url.pathname}` }
+    ]
+  })} />
+</BaseLayout>
