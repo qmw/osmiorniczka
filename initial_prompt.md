@@ -52,3 +52,15 @@ Create 3 MDX blog posts in /home/piotr/OSMIORNICZKA/src/pages/blog/. ALL CONTENT
 ## 2026-03-30
 
 Create 3 MDX blog posts in /home/piotr/OSMIORNICZKA/src/pages/blog/. ALL CONTENT IN POLISH with proper diacritics. Follow DNA_MARKI.md philosophy: educational, honest, no hard selling. Tone: smart friend. Articles: ubezpieczenie-gap-w-leasingu.mdx, leasing-na-ryczalcie.mdx, co-zrobic-gdy-firma-leasingowa-odmowila.mdx.
+
+## 2026-03-30
+
+Add missing internal links to blog posts 9-16 (leasing-operacyjny-vs-finansowy, leasing-bez-wkladu-wlasnego, leasing-czy-kredyt-co-sie-oplaca, gwarancja-de-minimis-bgk, leasing-samochodu-elektrycznego, leasing-samochodu-uzywanego, leasing-a-zawieszenie-dzialalnosci, ubezpieczenie-gap-w-leasingu). 3-5 new links per article, naturally within existing text or short bridging sentences.
+
+## 2026-03-30
+
+Add missing internal links to blog posts 1-8 (jak-wziac-leasing-na-firme, ile-kosztuje-leasing-samochodu, leasing-dla-nowej-firmy, jakie-dokumenty-do-leasingu, cesja-leasingu, co-to-jest-faktoring, kredyt-obrotowy-czy-inwestycyjny, wykup-samochodu-z-leasingu). 3-5 new links per article, naturally within existing text.
+
+## 2026-03-30
+
+Add missing internal links to blog posts 17-23 (leasing-czy-wynajem-dlugoterminowy, ile-kosztuje-kredyt-firmowy, co-mozna-wziac-w-leasing, leasing-na-ryczalcie, jak-wybrac-firme-leasingowa, dotacje-dla-firm-2026, co-zrobic-gdy-firma-leasingowa-odmowila). 3-5 new links per article, naturally within existing text.
