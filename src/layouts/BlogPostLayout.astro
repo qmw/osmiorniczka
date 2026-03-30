@@ -58,11 +58,6 @@ const cat = categoryMap[category] || { label: category, url: '/blog/' };
         </div>
         <h1 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-slate-900 mb-4 leading-tight">{title}</h1>
         <p class="text-lg text-slate-500 mb-6">{description}</p>
-        <div class="flex items-center gap-4 text-sm text-slate-500 border-t border-slate-100 pt-4">
-          <span>Autor: <strong class="text-slate-700">{author}</strong></span>
-          <span>Opublikowano: <time datetime={date}>{new Date(date).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}</time></span>
-          {updated && <span>Zaktualizowano: <time datetime={updated}>{new Date(updated).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}</time></span>}
-        </div>
       </header>
 
       <!-- Article content -->

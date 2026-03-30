@@ -28,3 +28,15 @@ Read and update kontakt.astro and o-mnie.astro to be less commercial, more educa
 ## 2026-03-30
 
 Read /home/piotr/OSMIORNICZKA/src/pages/index.astro and make it less commercial, more educational per the brand DNA. The site is leasingpoprostu.pl — "Ośmiorniczka - Leasing Po Prostu". Philosophy: 90% value, 10% conversion. The site should feel like a free encyclopedia, not a broker's landing page. ALL TEXT MUST BE IN POLISH with proper diacritics. Change hero, social proof, section headings, card links, how-it-works steps, calculator CTA, and bottom CTA to educational tone.
+
+## 2026-03-30
+
+Create 3 MDX blog posts in /home/piotr/OSMIORNICZKA/src/pages/blog/. ALL CONTENT IN POLISH with proper diacritics. Follow the DNA_MARKI.md philosophy: educational, honest, no hard selling. Tone: like a smart friend explaining finance. Articles: co-to-jest-faktoring.mdx, gwarancja-de-minimis-bgk.mdx, leasing-samochodu-elektrycznego.mdx.
+
+## 2026-03-30
+
+Create 3 MDX blog posts in /home/piotr/OSMIORNICZKA/src/pages/blog/. ALL CONTENT IN POLISH with proper diacritics. Follow the DNA_MARKI.md philosophy: educational, honest, no hard selling. Tone: like a smart friend explaining finance. Articles: ile-kosztuje-leasing-samochodu.mdx, leasing-dla-nowej-firmy.mdx, jakie-dokumenty-do-leasingu.mdx.
+
+## 2026-03-30
+
+Create 4 MDX blog posts in /home/piotr/OSMIORNICZKA/src/pages/blog/. ALL CONTENT IN POLISH with proper diacritics. Follow the DNA_MARKI.md philosophy: educational, honest, no hard selling. Tone: like a smart friend explaining finance. Articles: leasing-bez-wkladu-wlasnego.mdx, cesja-leasingu.mdx, kredyt-obrotowy-czy-inwestycyjny.mdx, wykup-samochodu-z-leasingu.mdx.
