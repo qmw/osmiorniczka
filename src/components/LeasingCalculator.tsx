@@ -296,13 +296,13 @@ export default function LeasingCalculator() {
               {/* CTA */}
               <div className="bg-gradient-to-br from-coral-50 to-white rounded-2xl border border-coral-200 p-6 text-center">
                 <p className="font-heading font-bold text-lg text-slate-800 mb-2">
-                  Chcesz otrzymać konkretne oferty?
+                  Chcesz porównać z realnymi ofertami?
                 </p>
                 <p className="text-sm text-slate-600 mb-4">
-                  Porównamy oferty 30+ firm leasingowych i banków. Oddzwonimy w 15 minut.
+                  Możemy porównać Twoją sytuację z ofertami rynkowymi. Napisz — bez zobowiązań.
                 </p>
                 <a href="/kontakt/" className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-3.5 bg-gradient-to-br from-coral-400 to-coral-500 text-white font-heading font-semibold rounded-xl shadow-lg shadow-coral-400/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200">
-                  Bezpłatna konsultacja
+                  Napisz do nas
                 </a>
               </div>
             </div>

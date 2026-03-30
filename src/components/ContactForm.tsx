@@ -50,7 +50,7 @@ export default function ContactForm({ variant = 'full' }: { variant?: 'full' | '
           className="flex-1 px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none"
         />
         <button type="submit" className="px-6 py-3 bg-gradient-to-br from-coral-400 to-coral-500 text-white font-heading font-semibold rounded-xl shadow-lg shadow-coral-400/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 whitespace-nowrap">
-          Oddzwońcie do mnie
+          Wyślij wiadomość
         </button>
       </form>
     );
@@ -113,7 +113,7 @@ export default function ContactForm({ variant = 'full' }: { variant?: 'full' | '
         />
       </div>
       <button type="submit" className="w-full py-4 bg-gradient-to-br from-teal-500 to-teal-700 text-white font-heading font-semibold rounded-xl shadow-lg shadow-teal-500/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 text-lg">
-        Wyślij — oddzwonimy w 15 min
+        Wyślij wiadomość
       </button>
       <p className="text-xs text-slate-400 text-center">
         Żadnych zobowiązań. Konsultacja jest całkowicie bezpłatna.
