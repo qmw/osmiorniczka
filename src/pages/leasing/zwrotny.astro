@@ -1,0 +1,35 @@
+---
+import ServiceLayout from '../../layouts/ServiceLayout.astro';
+const faq = [
+  { question: "Co to jest leasing zwrotny?", answer: "Leasing zwrotny polega na sprzedazy posiadanego srodka trwalego firmie leasingowej i jednoczesnym wziecia go w leasing. Efekt: odzyskujesz gotowke zamrozona w srodku trwalym, ale nadal z niego korzystasz." },
+  { question: "Jakie aktywa moga byc przedmiotem leasingu zwrotnego?", answer: "Samochody, maszyny, sprzet IT, nieruchomosci — praktycznie kazdy srodek trwaly o udokumentowanej wartosci." },
+  { question: "Czy leasing zwrotny sie oplaca?", answer: "Tak, jesli potrzebujesz szybkiego zastrzyku gotowki bez zaciagania kredytu. Kosztem jest oprocentowanie leasingu, ale zyskujesz plynnosc finansowa." }
+];
+---
+<ServiceLayout
+  title="Leasing Zwrotny 2026 — Uwolnij Gotowke z Posiadanych Aktywow | Osmiorniczka"
+  description="Leasing zwrotny — sprzedaj posiadane srodki trwale firmie leasingowej i nadal z nich korzystaj. Szybki zastrzyk gotowki bez kredytu. Porownaj oferty."
+  h1="Leasing zwrotny — uwolnij gotowke z posiadanych aktywow"
+  subtitle="Potrzebujesz gotowki? Sprzedaj posiadane srodki trwale firmie leasingowej i nadal z nich korzystaj. Szybki zastrzyk kapitalu bez kredytu."
+  breadcrumbParent={{ name: "Leasing", url: "/leasing/samochody/" }}
+  breadcrumbCurrent="Leasing zwrotny"
+  faq={faq}
+>
+  <h2>Jak dziala leasing zwrotny?</h2>
+  <ol>
+    <li><strong>Wycena</strong> — rzeczoznawca wycenia Twoj srodek trwaly (auto, maszyne, nieruchomosc)</li>
+    <li><strong>Sprzedaz</strong> — sprzedajesz go firmie leasingowej za wartosc rynkowa</li>
+    <li><strong>Leasing</strong> — bierzesz ten sam srodek w leasing zwrotny</li>
+    <li><strong>Gotowka</strong> — otrzymujesz srodki na konto (zwykle 70-90% wartosci)</li>
+    <li><strong>Korzystasz dalej</strong> — uzywasz go tak jak dotychczas</li>
+    <li><strong>Wykup</strong> — po zakonczeniu umowy wykupujesz z powrotem</li>
+  </ol>
+  <h3>Kiedy warto rozwazyc leasing zwrotny?</h3>
+  <ul>
+    <li>Potrzebujesz <strong>szybkiego zastrzyku gotowki</strong></li>
+    <li>Nie chcesz zaciagac kredytu obrotowego</li>
+    <li>Masz cenne srodki trwale "zamrozone" w bilansie</li>
+    <li>Chcesz <strong>poprawic wskazniki finansowe</strong> (bilans)</li>
+    <li>Szukasz finansowania na rozwoj firmy</li>
+  </ul>
+</ServiceLayout>

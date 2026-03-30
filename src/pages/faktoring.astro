@@ -1,0 +1,58 @@
+---
+import ServiceLayout from '../layouts/ServiceLayout.astro';
+const faq = [
+  { question: "Co to jest faktoring?", answer: "Faktoring to usluga finansowa, w ktorej firma faktoringowa wyplaca Ci pieniadze z wystawionych faktur przed terminem platnosci. Zamiast czekac 30-90 dni, dostajesz srodki w 24 godziny." },
+  { question: "Ile kosztuje faktoring?", answer: "Prowizja faktoringowa wynosi zazwyczaj 0,1-3% wartosci faktury. Koszt zalezy od wolumenu, terminow platnosci i ryzyka kontrahenta." },
+  { question: "Czym sie rozni faktoring pelny od niepelnego?", answer: "W faktoringu pelnym firma faktoringowa przejmuje ryzyko nieplacenia przez kontrahenta. W niepelnym — jesli kontrahent nie zaplaci, Ty zwracasz pieniadze faktorowi." },
+  { question: "Czy mala firma moze korzystac z faktoringu?", answer: "Tak — faktoring jest dostepny nawet dla malych firm z obrotem od 50 000 zl miesiecznie. Nie trzeba miec dlugiej historii dzialalnosci." }
+];
+---
+<ServiceLayout
+  title="Faktoring dla Firm 2026 — Pieniadze z Faktur w 24h | Osmiorniczka"
+  description="Faktoring dla firm — pieniadze z faktur w 24 godziny. Pelny i niepelny, od 0,1% prowizji. Popraw plynnosc finansowa. Porownaj oferty faktorow."
+  h1="Faktoring — pieniadze z faktur w 24 godziny"
+  subtitle="Nie czekaj 30-90 dni na platnosc od kontrahenta. Faktoring pozwala otrzymac srodki z wystawionych faktur w ciagu jednego dnia roboczego."
+  breadcrumbCurrent="Faktoring"
+  faq={faq}
+>
+  <h2>Faktoring — jak dziala?</h2>
+  <ol>
+    <li><strong>Wystawiasz fakture</strong> kontrahentowi z odroczonym terminem platnosci</li>
+    <li><strong>Przesylasz fakture</strong> do firmy faktoringowej</li>
+    <li><strong>Otrzymujesz 80-90% kwoty</strong> na konto w 24 godziny</li>
+    <li><strong>Kontrahent placi</strong> faktorowi w terminie</li>
+    <li><strong>Otrzymujesz reszte</strong> (pomniejszona o prowizje faktora)</li>
+  </ol>
+
+  <h3>Rodzaje faktoringu</h3>
+  <table>
+    <thead><tr><th>Rodzaj</th><th>Ryzyko niewykladu</th><th>Koszt</th><th>Dla kogo</th></tr></thead>
+    <tbody>
+      <tr><td>Pelny (bez regresu)</td><td>Faktor</td><td>Wyzszy</td><td>Firmy z wieloma kontrahentami</td></tr>
+      <tr><td>Niepelny (z regresem)</td><td>Twoja firma</td><td>Nizszy</td><td>Firmy ze stalymi, pewnymi odbiorcami</td></tr>
+      <tr><td>Odwrotny</td><td>Faktor</td><td>Sredni</td><td>Oplacanie wlasnych faktur zakupowych</td></tr>
+      <tr><td>Cichy</td><td>Twoja firma</td><td>Nizszy</td><td>Gdy nie chcesz informowac kontrahenta</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Kiedy warto rozwazyc faktoring?</h3>
+  <ul>
+    <li>Kontrahenci placa z <strong>odroczonym terminem</strong> (30-90 dni)</li>
+    <li>Potrzebujesz <strong>stalego dostepu do gotowki</strong></li>
+    <li>Firma szybko rosnie i <strong>brakuje kapitalu obrotowego</strong></li>
+    <li>Nie chcesz zaciagac kredytu bankowego</li>
+    <li>Masz <strong>wiarygodnych kontrahentow</strong> (korporacje, instytucje publiczne)</li>
+  </ul>
+
+  <h3>Faktoring vs kredyt obrotowy</h3>
+  <table>
+    <thead><tr><th>Aspekt</th><th>Faktoring</th><th>Kredyt obrotowy</th></tr></thead>
+    <tbody>
+      <tr><td>Zabezpieczenie</td><td>Faktury (wierzytelnosci)</td><td>Hipoteka, porecznie, BGK</td></tr>
+      <tr><td>Szybkosc uruchomienia</td><td>1-3 dni</td><td>1-4 tygodnie</td></tr>
+      <tr><td>Limit rosnie z obrotami</td><td>Tak</td><td>Staly</td></tr>
+      <tr><td>Wplyw na bilans</td><td>Minimalny</td><td>Zwieksza zadluzenie</td></tr>
+      <tr><td>Dla nowych firm</td><td>Tak (od 3 mies.)</td><td>Trudne (min. 12 mies.)</td></tr>
+    </tbody>
+  </table>
+</ServiceLayout>

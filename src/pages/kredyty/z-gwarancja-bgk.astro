@@ -1,0 +1,45 @@
+---
+import ServiceLayout from '../../layouts/ServiceLayout.astro';
+const faq = [
+  { question: "Co to jest gwarancja de minimis BGK?", answer: "To bezplatne zabezpieczenie kredytu przez Bank Gospodarstwa Krajowego. Pokrywa do 80% kwoty kredytu, co ulatwia uzyskanie finansowania i moze obnizac oprocentowanie." },
+  { question: "Ile kosztuje gwarancja BGK?", answer: "Gwarancja de minimis jest bezplatna dla MSP (prowizja 0%). Dostepna w ramach pomocy de minimis — limit 300 000 EUR w ciagu 3 lat." },
+  { question: "Kto moze skorzystac z gwarancji BGK?", answer: "Mikro, male i srednie przedsiebiorstwa (MSP) prowadzace dzialalnosc gospodarcza. Firma nie moze byc w trudnej sytuacji finansowej." }
+];
+---
+<ServiceLayout
+  title="Gwarancja BGK de minimis 2026 — Bezplatne Zabezpieczenie Kredytu | Osmiorniczka"
+  description="Gwarancja BGK de minimis — bezplatne zabezpieczenie kredytu firmowego do 80% kwoty. Latwiejszy dostep do finansowania dla MSP. Dowiedz sie wiecej."
+  h1="Gwarancja BGK de minimis — bezplatne zabezpieczenie kredytu"
+  subtitle="Nie masz wystarczajacych zabezpieczen na kredyt? Gwarancja BGK de minimis pokrywa do 80% kwoty kredytu — bezplatnie dla MSP."
+  breadcrumbParent={{ name: "Kredyty", url: "/kredyty/obrotowy/" }}
+  breadcrumbCurrent="Gwarancja BGK"
+  faq={faq}
+>
+  <h2>Gwarancja de minimis — czym jest i jak dziala?</h2>
+  <p>Gwarancja de minimis BGK to <strong>jedno z najwazniejszych narzedzi wspierajacych dostep MSP do finansowania</strong> w Polsce. Dzieki niej bank udzielajacy kredytu ma pewnosc splaty — co przekklada sie na latwiejszy dostep do kredytu dla Twojej firmy.</p>
+  <h3>Jak to dziala?</h3>
+  <ol>
+    <li>Skladasz wniosek o kredyt w banku (zwyklym kredytowym)</li>
+    <li>Bank wnioskuje o gwarancje BGK (rownoczesnie)</li>
+    <li>BGK udziela gwarancji do <strong>80% kwoty kredytu</strong></li>
+    <li>Gwarancja zastepuje inne zabezpieczenia (hipoteka, poreczenie)</li>
+  </ol>
+  <h3>Parametry gwarancji de minimis</h3>
+  <table>
+    <thead><tr><th>Parametr</th><th>Wartosc</th></tr></thead>
+    <tbody>
+      <tr><td>Maksymalne zabezpieczenie</td><td>80% kwoty kredytu</td></tr>
+      <tr><td>Prowizja</td><td>0% (bezplatna dla MSP)</td></tr>
+      <tr><td>Okres gwarancji — obrotowy</td><td>Do 39 miesiecy</td></tr>
+      <tr><td>Okres gwarancji — inwestycyjny</td><td>Do 99 miesiecy</td></tr>
+      <tr><td>Limit pomocy de minimis</td><td>300 000 EUR / 3 lata</td></tr>
+    </tbody>
+  </table>
+  <h3>Korzysci z gwarancji BGK</h3>
+  <ul>
+    <li><strong>Latwiejszy dostep do kredytu</strong> — nawet bez wlasnych zabezpieczen</li>
+    <li><strong>Nizsze oprocentowanie</strong> — bank ponosi mniejsze ryzyko</li>
+    <li><strong>Szybsza decyzja</strong> — uproszczona procedura</li>
+    <li><strong>Bezplatna</strong> — brak prowizji dla MSP</li>
+  </ul>
+</ServiceLayout>

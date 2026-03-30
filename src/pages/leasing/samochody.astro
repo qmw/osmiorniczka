@@ -1,0 +1,115 @@
+---
+import ServiceLayout from '../../layouts/ServiceLayout.astro';
+
+const faq = [
+  {
+    question: "Ile kosztuje leasing samochodu na firme?",
+    answer: "Rata leasingu zalezy od wartosci pojazdu, wkladu wlasnego i okresu. Dla samochodu o wartosci 100 000 zl netto, przy 10% wkladu i 36 miesiacach, rata wynosi ok. 2 800 zl netto. Uzyj naszego kalkulatora, aby obliczyc rate dla swojego samochodu."
+  },
+  {
+    question: "Czy moge wziac leasing na samochod uzywany?",
+    answer: "Tak — wiekszosc firm leasingowych finansuje samochody uzywane. Zwykle pojazd nie moze miec wiecej niz 5-7 lat na koniec umowy leasingowej. Warunki sa nieco inne niz dla nowych aut."
+  },
+  {
+    question: "Leasing samochodu osobowego — jak odliczyc VAT?",
+    answer: "W leasingu operacyjnym samochodu osobowego mozesz odliczyc 50% VAT od rat (100% jezeli prowadzisz ewidencje przebiegu i uzywasz auta wylacznie sluzbowo). Cala rata netto jest kosztem uzyskania przychodu, ale dla aut powyzej 150 000 zl netto obowiazuje limit."
+  },
+  {
+    question: "Czy moge wziac leasing samochodu bez wkladu wlasnego?",
+    answer: "Tak, niektore firmy leasingowe oferuja leasing od 0% wkladu wlasnego. Wymagana jest dobra historia finansowa firmy. Firmy dzialajace krotko niz 12 miesiecy zwykle potrzebuja wkladu 10-30%."
+  },
+  {
+    question: "Leasing czy wynajem dlugoterminowy — co lepsze?",
+    answer: "Leasing jest tanszy w dluzkiej perspektywie i daje Ci mozliwosc wykupu. Wynajem dlugoterminowy obejmuje serwis i ubezpieczenie, ale jest drozszy. Leasing jest lepszy, jesli chcesz byc wlascicielem auta."
+  }
+];
+---
+
+<ServiceLayout
+  title="Leasing Samochodu na Firme 2026 — Najlepsze Oferty | Osmiorniczka"
+  description="Leasing samochodu na firme — porownaj oferty 30+ firm leasingowych. Operacyjny i finansowy, nowe i uzywane, od 0% wkladu. Oblicz rate online. Bezplatna konsultacja."
+  h1="Leasing samochodu na firme — najlepsze oferty 2026"
+  subtitle="Porownujemy oferty 30+ firm leasingowych. Samochody osobowe, dostawcze, ciezarowe i elektryczne. Od 0% wkladu wlasnego, decyzja nawet w 24h."
+  breadcrumbParent={{ name: "Leasing", url: "/leasing/samochody/" }}
+  breadcrumbCurrent="Samochody"
+  faq={faq}
+>
+  <h2>Leasing samochodu na firme — wszystko co musisz wiedziec</h2>
+  <p>Leasing samochodu to najpopularniejsza forma finansowania pojazdow przez firmy w Polsce. Ponad <strong>70% nowych samochodow firmowych</strong> jest finansowanych leasingiem. Dlaczego? Bo to najkorzystniejsza forma podatkowo — cala rata trafia w koszty firmy.</p>
+
+  <h3>Jakie samochody mozesz leasingowac?</h3>
+  <ul>
+    <li><strong>Samochody osobowe</strong> — nowe i uzywane, wszystkie marki</li>
+    <li><strong>Samochody dostawcze</strong> — furgony, pickupy, busy</li>
+    <li><strong>Samochody ciezarowe</strong> — TIR-y, wywrotki, naczepy</li>
+    <li><strong>Samochody elektryczne</strong> — z mozliwoscia skorzystania z dotacji NaszEauto</li>
+    <li><strong>Samochody hybrydowe</strong> — plug-in i mild hybrid</li>
+  </ul>
+
+  <h3>Leasing operacyjny samochodu — korzysci podatkowe</h3>
+  <p>W leasingu operacyjnym:</p>
+  <ul>
+    <li>Cala rata netto jest <strong>kosztem uzyskania przychodu</strong></li>
+    <li>Odliczasz <strong>50% VAT</strong> od rat (lub 100% przy uzytku wylacznie sluzbowym)</li>
+    <li>Dla aut do 150 000 zl netto — brak limitu amortyzacji</li>
+    <li>Wplata poczatkowa rowniez jest kosztem</li>
+  </ul>
+
+  <h3>Limit 150 000 zl — co to oznacza?</h3>
+  <p>Od 2019 roku obowiazuje limit <strong>150 000 zl netto</strong> dla samochodow osobowych. Jesli auto kosztuje wiecej, czesc rat powyzej tego limitu nie stanowi kosztu podatkowego. Dla samochodow elektrycznych limit wynosi <strong>225 000 zl</strong>.</p>
+
+  <h3>Porownanie ofert leasingowych — przykladowe warunki</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Parametr</th>
+        <th>Oferta A</th>
+        <th>Oferta B</th>
+        <th>Oferta C</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Marza</td>
+        <td>3,5%</td>
+        <td>4,0%</td>
+        <td>3,2%</td>
+      </tr>
+      <tr>
+        <td>Min. wklad wlasny</td>
+        <td>0%</td>
+        <td>5%</td>
+        <td>10%</td>
+      </tr>
+      <tr>
+        <td>Okres</td>
+        <td>24-60 mies.</td>
+        <td>24-72 mies.</td>
+        <td>24-48 mies.</td>
+      </tr>
+      <tr>
+        <td>Auta uzywane</td>
+        <td>Tak (do 5 lat)</td>
+        <td>Tak (do 7 lat)</td>
+        <td>Tylko nowe</td>
+      </tr>
+      <tr>
+        <td>Decyzja</td>
+        <td>24h</td>
+        <td>48h</td>
+        <td>24h</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><em>Powyzsze dane sa orientacyjne. Skontaktuj sie z nami po aktualne oferty.</em></p>
+
+  <h3>Jak wyglada proces leasingu samochodu?</h3>
+  <ol>
+    <li><strong>Wybierz samochod</strong> — u dealera lub na rynku wtornym</li>
+    <li><strong>Skontaktuj sie z nami</strong> — przeslemy fakture proforma do firm leasingowych</li>
+    <li><strong>Otrzymasz oferty</strong> — przygotujemy porownanie 3-5 najlepszych</li>
+    <li><strong>Zloz wniosek</strong> — wystarczy dowod i NIP, my wypelniamy papiery</li>
+    <li><strong>Decyzja i umowa</strong> — decyzja w 24-48h, podpisanie umowy online lub osobiscie</li>
+    <li><strong>Odbierz samochod</strong> — firma leasingowa placi dealerowi, Ty odbierasz auto</li>
+  </ol>
+</ServiceLayout>

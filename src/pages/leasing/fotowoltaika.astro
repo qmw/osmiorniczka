@@ -1,0 +1,45 @@
+---
+import ServiceLayout from '../../layouts/ServiceLayout.astro';
+const faq = [
+  { question: "Czy leasing fotowoltaiki sie oplaca?", answer: "Tak — raty leasingowe sa czesto nizsze niz oszczednosci na rachunkach za prad. Dodatkowo cala rata jest kosztem firmy i odliczasz 100% VAT." },
+  { question: "Czy moge polaczyc leasing z dotacja?", answer: "W niektorych programach tak. Doradzimy, ktore opcje dotacji (np. Moj Prad dla firm, programy wojewodzkie) mozna laczyc z leasingiem." },
+  { question: "Jaki jest okres leasingu fotowoltaiki?", answer: "Typowo 36-72 miesiace. Dlugi okres pozwala uzyskac niska rate — czesto nizsza niz dotychczasowy rachunek za energie." }
+];
+---
+<ServiceLayout
+  title="Leasing Fotowoltaiki dla Firm 2026 — Panele, Magazyny Energii | Osmiorniczka"
+  description="Leasing fotowoltaiki dla firm — panele sloneczne, magazyny energii, pompy ciepla. Rata nizsza niz rachunek za prad. 100% VAT w odliczeniu."
+  h1="Leasing fotowoltaiki dla firm — obniz rachunki za energie"
+  subtitle="Zainstaluj fotowoltaike bez zamrazania kapitalu. Rata leasingu czesto nizsza niz dotychczasowy rachunek za prad. 100% w kosztach firmy."
+  breadcrumbParent={{ name: "Leasing", url: "/leasing/samochody/" }}
+  breadcrumbCurrent="Fotowoltaika"
+  faq={faq}
+>
+  <h2>Fotowoltaika na leasing — dlaczego warto?</h2>
+  <p>Instalacja fotowoltaiczna to inwestycja, ktora zwraca sie w 5-8 lat. Dzieki leasingowi nie musisz wykladac 50 000-200 000 zl z gory — <strong>raty czesto sa nizsze niz oszczednosci na pradzie</strong>.</p>
+  <h3>Co mozesz sfinansowac?</h3>
+  <ul>
+    <li><strong>Panele fotowoltaiczne</strong> — instalacje dachowe i gruntowe</li>
+    <li><strong>Magazyny energii</strong> — baterie litowe, systemy hybrydowe</li>
+    <li><strong>Pompy ciepla</strong> — powietrzne i gruntowe</li>
+    <li><strong>Turbiny wiatrowe</strong> — male elektrownie wiatrowe</li>
+  </ul>
+  <h3>Korzysci podatkowe leasingu fotowoltaiki</h3>
+  <ul>
+    <li>Cala rata netto = <strong>koszt uzyskania przychodu</strong></li>
+    <li><strong>100% VAT</strong> do odliczenia (fotowoltaika to nie samochod!)</li>
+    <li>Brak limitu wartosci</li>
+    <li>Amortyzacja po stronie leasingodawcy (leasing operacyjny)</li>
+  </ul>
+  <h3>Przyklad kalkulacji</h3>
+  <table>
+    <thead><tr><th>Parametr</th><th>Wartosc</th></tr></thead>
+    <tbody>
+      <tr><td>Instalacja</td><td>50 kWp</td></tr>
+      <tr><td>Koszt netto</td><td>150 000 zl</td></tr>
+      <tr><td>Rata leasingu (60 mies.)</td><td>ok. 3 100 zl/mies.</td></tr>
+      <tr><td>Oszczednosc na pradzie</td><td>ok. 3 500 zl/mies.</td></tr>
+      <tr><td>Bilans miesieczny</td><td>+400 zl na Twoja korzysc</td></tr>
+    </tbody>
+  </table>
+</ServiceLayout>
