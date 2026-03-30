@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://osmiorniczka.pl/sitemap-index.xml
+Sitemap: https://leasingpoprostu.pl/sitemap-index.xml

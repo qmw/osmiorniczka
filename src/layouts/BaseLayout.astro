@@ -23,10 +23,10 @@ const {
   noindex = false,
 } = Astro.props;
 
-const siteUrl = 'https://osmiorniczka.pl';
+const siteUrl = 'https://leasingpoprostu.pl';
 const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
 const fullOgImage = ogImage.startsWith('http') ? ogImage : new URL(ogImage, siteUrl).href;
-const siteName = 'Ośmiorniczka.pl';
+const siteName = 'LeasingPoProstu.pl';
 ---
 
 <!DOCTYPE html>

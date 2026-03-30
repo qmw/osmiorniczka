@@ -113,12 +113,12 @@ const cat = categoryMap[category] || { label: category, url: '/blog/' };
       "name": "Ośmiorniczka.pl",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://osmiorniczka.pl/logo.svg"
+        "url": "https://leasingpoprostu.pl/logo.svg"
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://osmiorniczka.pl${Astro.url.pathname}`
+      "@id": `https://leasingpoprostu.pl${Astro.url.pathname}`
     }
   })} />
 
@@ -126,9 +126,9 @@ const cat = categoryMap[category] || { label: category, url: '/blog/' };
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://osmiorniczka.pl/" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://osmiorniczka.pl/blog/" },
-      { "@type": "ListItem", "position": 3, "name": title, "item": `https://osmiorniczka.pl${Astro.url.pathname}` }
+      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://leasingpoprostu.pl/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://leasingpoprostu.pl/blog/" },
+      { "@type": "ListItem", "position": 3, "name": title, "item": `https://leasingpoprostu.pl${Astro.url.pathname}` }
     ]
   })} />
 </BaseLayout>
