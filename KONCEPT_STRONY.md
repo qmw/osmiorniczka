@@ -1,12 +1,16 @@
-# Koncept strony — Niezależny Ekspert Leasingowy & Kredytowy (B2B)
+# Koncept strony — LeasingPoProstu.pl (Ośmiorniczka)
 
 Data: 2026-03-30
 
 ---
 
-## Filozofia: "Daj wartość za darmo → zbuduj zaufanie → konwertuj"
+## Filozofia: "Daj wiedzę za darmo → zbuduj zaufanie → bądź pod ręką"
 
-Strona nie powinna być nachalną wizytówką. Powinna być **narzędziem**, po które przedsiębiorca sięga, gdy szuka odpowiedzi. Dopiero po uzyskaniu wartości (kalkulator, poradnik, porównanie) — zobaczy CTA do kontaktu z ekspertem.
+Strona to **darmowa encyklopedia leasingu i kredytów firmowych** — nie wizytówka brokera. Przedsiębiorca przychodzi tu po odpowiedź na pytanie, korzysta z kalkulatora, czyta poradnik. Czuje się jak na Wikipedii, nie jak na stronie sprzedażowej.
+
+Konwersja jest naturalnym efektem zaufania — nie celem każdej podstrony. Jeśli ktoś przeczyta artykuł i wyjdzie — to sukces, bo wróci albo poleci.
+
+**Szczegółowy opis filozofii, tonu, CTA i zasad → patrz [DNA_MARKI.md](DNA_MARKI.md)**
 
 ---
 
@@ -53,13 +57,13 @@ Strona nie powinna być nachalną wizytówką. Powinna być **narzędziem**, po 
 ### 1. Kalkulator leasingu / kredytu
 - Użytkownik wpisuje: wartość przedmiotu, okres, wkład własny
 - Otrzymuje: szacunkową ratę, koszt całkowity, porównanie leasing vs kredyt
-- **Po obliczeniu:** "Chcesz otrzymać konkretne oferty od 30+ firm? Zostaw numer — oddzwonię w 15 min"
+- **Po obliczeniu:** delikatne zaproszenie: "Chcesz porównać z konkretnymi ofertami? Zostaw numer — porozmawiamy, zero zobowiązań"
 - Targetowane frazy: `kalkulator leasingu`, `oblicz ratę leasingu`, `kalkulator leasingu samochodu`
 
 ### 2. Porównywarka ofert
 - Tabele porównawcze firm leasingowych i banków (aktualizowane co miesiąc)
 - Kolumny: firma, min. okres, max. okres, wkład własny, prowizja, ocena
-- **CTA:** "Nie wiesz, która oferta najlepsza dla Twojej sytuacji? Przeanalizuję za darmo"
+- **CTA (delikatne, na końcu):** "Masz pytanie o konkretną ofertę? Napisz — chętnie pomożemy"
 - Targetowane frazy: `ranking firm leasingowych`, `porównanie ofert leasingowych`, `najlepsza firma leasingowa`
 
 ### 3. Blog ekspercki (główny silnik SEO)
@@ -68,7 +72,7 @@ Strona nie powinna być nachalną wizytówką. Powinna być **narzędziem**, po 
   1. Odpowiedź na pytanie w pierwszym akapicie (featured snippet)
   2. Rozwinięcie z konkretnymi liczbami i przykładami
   3. Tabelka porównawcza lub checklist
-  4. CTA na końcu: "Potrzebujesz indywidualnej analizy? [Bezpłatna konsultacja]"
+  4. Delikatne CTA na końcu: "Masz pytanie, na które nie znalazłeś odpowiedzi? Napisz — pomożemy"
 
 ---
 
@@ -134,9 +138,9 @@ Tabela z aktualnymi ofertami firm leasingowych
 [Sekcja 6 — Powiązane artykuły]
 Linki do blogpostów (internal linking)
 
-[Sekcja 7 — CTA końcowe]
-"Bezpłatna analiza ofert — znajdę najlepszy leasing dla Twojej firmy"
-Formularz: imię, telefon, co chcesz leasingować
+[Sekcja 7 — Delikatne CTA]
+"Masz pytanie? Chętnie pomożemy — zero zobowiązań"
+Prosty formularz: imię, telefon (opcjonalnie)
 ```
 
 ---
@@ -147,7 +151,7 @@ Formularz: imię, telefon, co chcesz leasingować
 2. **Szybkość:** statyczna strona (Next.js SSG lub Astro), <2s LCP
 3. **Mobile-first:** 70%+ ruchu z mobile
 4. **Internal linking:** każdy artykuł linkuje do 2-3 powiązanych + do strony usługowej
-5. **Meta title pattern:** `[Fraza kluczowa] — [Benefit] | [Nazwa marki]`
+5. **Meta title pattern:** `[Fraza kluczowa] — [Benefit] | LeasingPoProstu.pl`
 6. **URL pattern:** `/blog/leasing-samochodu-dla-nowej-firmy` (czytelne, z frazą)
 7. **Breadcrumbs:** Strona główna > Blog > Leasing > [Tytuł]
 8. **Sitemap XML + robots.txt**
@@ -176,19 +180,23 @@ Blog: artykuł poradnikowy (daje wartość, buduje zaufanie)
     ↓
 Internal link → Kalkulator leasingu (angażuje, trzyma na stronie)
     ↓
-Wynik kalkulatora + CTA: "Chcesz konkretne oferty? Zostaw numer"
+Wynik kalkulatora (pełny, bez blokad)
     ↓
-Formularz kontaktowy / telefon
+Użytkownik decyduje — wychodzi mądrzejszy LUB chce pogadać
     ↓
-Rozmowa z ekspertem → leasing załatwiony
+Delikatne CTA: "Chcesz porównać z realnymi ofertami? Zostaw numer"
+    ↓
+Rozmowa — pomagamy, nie sprzedajemy
 ```
 
 ---
 
 ## Kluczowe zasady
 
-1. **Każda strona odpowiada na jedną intencję wyszukiwania** — nie mieszaj informacyjnej z transakcyjną
-2. **Najpierw wartość, potem sprzedaż** — CTA dopiero po dostarczeniu treści
-3. **Aktualizuj treści** — artykuły z datą 2026 muszą być aktualne, Google to sprawdza
-4. **Buduj topical authority** — pisz o WSZYSTKIM co dotyczy leasingu/kredytów, nie tylko o najchętniej wyszukiwanych frazach
-5. **Zbieraj opinie/case studies** — social proof jest kluczowy w branży finansowej
+1. **Każda strona odpowiada na jedno pytanie użytkownika** — nie mieszaj tematów
+2. **Najpierw wiedza, potem (może) kontakt** — CTA dopiero na końcu, delikatnie, bez presji
+3. **Aktualizuj treści** — nieaktualne dane = utrata zaufania, Google to sprawdza
+4. **Buduj topical authority** — pisz o WSZYSTKIM co dotyczy leasingu/kredytów
+5. **Bądź uczciwy** — jeśli leasing się nie opłaca, napisz to wprost
+6. **Nie blokuj treści** — żadnych pop-upów, wymaganych emaili, ukrytych wyników
+7. **Ton: mądry znajomy** — nie sprzedawca, nie profesor, nie bank (→ patrz DNA_MARKI.md)

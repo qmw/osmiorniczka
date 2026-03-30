@@ -1,4 +1,4 @@
-# Branding — Ośmiorniczka
+# Branding — Ośmiorniczka · LeasingPoProstu.pl
 
 Data: 2026-03-30
 
@@ -6,19 +6,22 @@ Data: 2026-03-30
 
 ## Nazwa i charakter marki
 
-**Nazwa:** Ośmiorniczka
-**Tagline:** "Wiele ramion, jedno rozwiązanie"
-**Alternatywne tagline:**
-- "Ogarniamy Twój leasing"
-- "Mamy ręce do leasingu (i to aż osiem!)"
+**Domena:** leasingpoprostu.pl
+**Marka / maskotka:** Ośmiorniczka
+**Pełna nazwa:** Ośmiorniczka - Leasing Po Prostu
+**Tagline:** "Leasing po prostu"
 
-**Osobowość marki:** Przyjazny ekspert, który mówi ludzkim językiem. Nie bank w garniturze — raczej kumpel-specjalista, który wie wszystko o leasingu i chętnie się tym dzieli. Ośmiorniczka to metafora: wiele ramion = wiele firm leasingowych, jedno ciało = jeden broker, który to ogarnia.
+**Osobowość marki:** Przyjazny przewodnik po świecie leasingu i kredytów. Nie sprzedawca — raczej mądry znajomy, który cierpliwie tłumaczy, daje narzędzia do samodzielnej analizy i pomaga dopiero wtedy, gdy go o to poprosisz. Ośmiorniczka to metafora: wiele ramion = ogarnia wszystko naraz, a "po prostu" = bez komplikacji, bez ściemy.
 
 **Ton komunikacji:**
-- Prosty, bezpośredni, ciepły
+- Edukacyjny, ciepły, bezpośredni — jak rozmowa ze znajomym, który się na tym zna
 - Bez żargonu (a jeśli się pojawi — od razu tłumaczymy)
-- Lekkość, ale nie infantylność — klient to przedsiębiorca, nie dziecko
-- Liczby i konkrety zamiast marketingowego bełkotu
+- Uczciwy — jeśli coś się nie opłaca, mówimy to wprost
+- Liczby, tabele, przykłady zamiast marketingowego bełkotu
+- Nigdy nachalny — zero "ZADZWOŃ TERAZ", zero pop-upów, zero clickbaitu
+
+**Szczegółowy opis tonu głosu, CTA i filozofii "90% wartość, 10% konwersja"
+→ patrz [DNA_MARKI.md](DNA_MARKI.md)**
 
 ---
 
