@@ -7,6 +7,7 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://leasingpoprostu.pl',
+  devToolbar: { enabled: false },
   integrations: [
     react(),
     tailwind(),
