@@ -1,0 +1,34 @@
+---
+import ServiceLayout from '../../layouts/ServiceLayout.astro';
+const faq = [
+  { question: "Jakie korzysci ma duza firma z brokera leasingu?", answer: "Duze firmy czesto maja umowy ramowe z kilkoma firmami leasingowymi. Broker moze je rozszerzyc o dodatkowych partnerow i negocjowac lepsze warunki dzieki laczeniu wolumenow wielu klientow." },
+  { question: "Czy obslugujecie floty samochodowe?", answer: "Tak — pomagamy w finansowaniu calych flot. Od kilku do kilkudziesieciu pojazdow, z mozliwoscia negocjacji warunków flotowych." }
+];
+---
+<ServiceLayout
+  title="Leasing dla Duzych Firm 2026 — Floty, Maszyny, Nieruchomosci | Osmiorniczka"
+  description="Leasing dla duzych firm — floty samochodowe, linie produkcyjne, nieruchomosci. Indywidualne warunki, dedykowany opiekun. Porownaj oferty."
+  h1="Leasing dla duzych firm — indywidualne warunki"
+  subtitle="Duza firma, duze potrzeby. Oferujemy dedykowana obsluge, negocjacje indywidualnych warunkow i finansowanie od kilkuset tysiecy do milionow zlotych."
+  breadcrumbParent={{ name: "Dla kogo", url: "/dla-kogo/jdg/" }}
+  breadcrumbCurrent="Duze firmy"
+  faq={faq}
+>
+  <h2>Finansowanie dla duzych firm</h2>
+  <p>Duze firmy maja specyficzne potrzeby — wyzsze kwoty, bardziej zlozone struktury finansowania, wymagania compliance. Jako broker mamy doswiadczenie w obslugiwaniu transakcji od setek tysiecy do milionow zlotych.</p>
+  <h3>Co oferujemy duzym firmom?</h3>
+  <ul>
+    <li><strong>Floty samochodowe</strong> — finansowanie 5-100+ pojazdow z warunkami flotowymi</li>
+    <li><strong>Linie produkcyjne</strong> — leasing maszyn o wartosci milionow zlotych</li>
+    <li><strong>Nieruchomosci komercyjne</strong> — biura, hale, magazyny</li>
+    <li><strong>Leasing zwrotny</strong> — uwolnienie kapitalu z posiadanych aktywow</li>
+    <li><strong>Structured finance</strong> — niestandardowe struktury finansowania</li>
+  </ul>
+  <h3>Dlaczego broker, a nie bezposrednio?</h3>
+  <ul>
+    <li><strong>Wiecej ofert</strong> — 30+ firm vs 2-3, z ktorymi macie umowe</li>
+    <li><strong>Lepsze warunki</strong> — konkurencja miedzy leasingodawcami = nizsza cena</li>
+    <li><strong>Oszczednosc czasu</strong> — jeden kontakt zamiast kilkunastu</li>
+    <li><strong>Bezplatnie</strong> — bez dodatkowych kosztow</li>
+  </ul>
+</ServiceLayout>

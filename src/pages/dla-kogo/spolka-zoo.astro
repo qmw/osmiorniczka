@@ -1,0 +1,36 @@
+---
+import ServiceLayout from '../../layouts/ServiceLayout.astro';
+const faq = [
+  { question: "Jakie dokumenty potrzebuje spolka z o.o. do leasingu?", answer: "KRS, umowa spolki, bilans i rachunek zyskow i strat za ostatni rok (lub F-01 za ostatni kwartal), dowod wlasciciela/czlonka zarzadu." },
+  { question: "Czy nowa spolka z o.o. moze wziac leasing?", answer: "Tak — nawet od pierwszego dnia. Wklad wlasny bedzie wyzszy (15-30%), ale wiele firm leasingowych finansuje nowe spolki." },
+  { question: "Czy spolka cywilna moze wziac leasing?", answer: "Tak — spolka cywilna moze byc strona umowy leasingowej. Wymagane sa dokumenty wszystkich wspolnikow plus umowa spolki." }
+];
+---
+<ServiceLayout
+  title="Leasing dla Spolki z o.o. 2026 — Warunki i Oferty | Osmiorniczka"
+  description="Leasing dla spolki z o.o. — warunki, dokumenty, oferty. Samochody, maszyny, sprzet IT. Od 0% wkladu. Porownaj oferty 30+ firm."
+  h1="Leasing dla spolki z o.o. — warunki i najlepsze oferty"
+  subtitle="Spolki z o.o. to najczestszy typ klienta firm leasingowych. Znamy specyfike — pomozemy dobrac najlepsza oferte."
+  breadcrumbParent={{ name: "Dla kogo", url: "/dla-kogo/jdg/" }}
+  breadcrumbCurrent="Spolka z o.o."
+  faq={faq}
+>
+  <h2>Leasing dla sp. z o.o. — co musisz wiedziec</h2>
+  <p>Spolka z ograniczona odpowiedzialnoscia to <strong>druga najpopularniejsza forma prawna</strong> wsrod klientow leasingowych. Proces jest nieco bardziej formalny niz dla JDG, ale warunki czesto sa lepsze — zwlaszcza dla spolek z obrotami.</p>
+  <h3>Wymagane dokumenty</h3>
+  <ul>
+    <li><strong>KRS</strong> (aktualny odpis)</li>
+    <li><strong>Umowa spolki</strong></li>
+    <li><strong>Bilans + RZiS</strong> za ostatni rok obrotowy</li>
+    <li><strong>F-01</strong> za ostatni kwartal (jesli dostepny)</li>
+    <li><strong>Dowod osobisty</strong> czlonka zarzadu</li>
+    <li><strong>Uchwala zarzadu</strong> o zaciagnieciu zobowiazania (przy wyzszych kwotach)</li>
+  </ul>
+  <h3>Korzysci leasingu dla sp. z o.o.</h3>
+  <ul>
+    <li>Raty leasingowe to <strong>koszt uzyskania przychodu</strong> (CIT)</li>
+    <li>Leasing operacyjny jest <strong>pozabilansowy</strong> — nie zwieksza zadluzenia w bilansie</li>
+    <li>Mozliwosc <strong>jednorazowej amortyzacji</strong> w leasingu finansowym (MSP, do 50 000 EUR)</li>
+    <li>Latwiejsze uzyskanie niz kredyt bankowy</li>
+  </ul>
+</ServiceLayout>

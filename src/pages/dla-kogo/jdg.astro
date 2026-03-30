@@ -1,0 +1,45 @@
+---
+import ServiceLayout from '../../layouts/ServiceLayout.astro';
+const faq = [
+  { question: "Czy JDG moze wziac leasing?", answer: "Tak — jednoosobowa dzialalnosc gospodarcza to najpopularniejsza forma prawna wsrod klientow firm leasingowych. Wystarczy NIP, dowod i PIT za ostatni rok." },
+  { question: "Jaki wklad wlasny potrzebuje jako JDG?", answer: "Dla firm dzialajacych powyzej 12 miesiecy — od 0%. Dla nowych JDG — zwykle 10-20%, w zaleznosci od scoringu." },
+  { question: "Czy leasing na JDG wplywa na zdolnosc kredytowa?", answer: "Leasing operacyjny jest zobowiazaniem pozabilansowym, wiec w mniejszym stopniu wplywa na zdolnosc kredytowa niz kredyt." }
+];
+---
+<ServiceLayout
+  title="Leasing dla JDG 2026 — Jednoosobowa Dzialalnosc Gospodarcza | Osmiorniczka"
+  description="Leasing dla jednoosobowej dzialalnosci gospodarczej — samochody, maszyny, sprzet. Od 0% wkladu, szybka decyzja. Poradnik dla JDG."
+  h1="Leasing dla JDG — poradnik dla jednoosobowej dzialalnosci"
+  subtitle="Prowadzisz jednoosobowa dzialalnosc? Leasing to najkorzystniejsza forma finansowania — cala rata w kosztach, od 0% wkladu, decyzja w 24h."
+  breadcrumbParent={{ name: "Dla kogo", url: "/dla-kogo/jdg/" }}
+  breadcrumbCurrent="JDG"
+  faq={faq}
+>
+  <h2>Leasing na JDG — dlaczego warto?</h2>
+  <p>Jednoosobowa dzialalnosc gospodarcza (JDG) to <strong>najpopularniejsza forma prawna w Polsce</strong> — i jednoczesnie najczesciej korzystajaca z leasingu. Dlaczego?</p>
+  <ul>
+    <li><strong>Cala rata netto = koszt firmy</strong> — zmniejsza podstawe opodatkowania</li>
+    <li><strong>Nie zamrazasz kapitalu</strong> — pieniadze zostaja w firmie na biezaca dzialalnosc</li>
+    <li><strong>Nie potrzebujesz duzego wkladu</strong> — od 0% dla firm z historia</li>
+    <li><strong>Szybka decyzja</strong> — 24h zamiast tygodni jak w banku</li>
+  </ul>
+
+  <h3>Jakie dokumenty potrzebuje jako JDG?</h3>
+  <table>
+    <thead><tr><th>Forma rozliczenia</th><th>Dokumenty</th></tr></thead>
+    <tbody>
+      <tr><td>KPiR (zasady ogolne, liniowy)</td><td>KPiR za biezacy rok + PIT-36/PIT-36L</td></tr>
+      <tr><td>Ryczalt</td><td>Ewidencja przychodow + PIT-28</td></tr>
+      <tr><td>Karta podatkowa</td><td>Decyzja o karcie + PIT-16A</td></tr>
+    </tbody>
+  </table>
+  <p>Dodatkowo: dowod osobisty, NIP, REGON. To wszystko — formalnosci sa naprawde proste.</p>
+
+  <h3>Leasing na ryczalcie — jak to dziala?</h3>
+  <p>Jesli rozliczasz sie ryczaltem, <strong>nie mozesz odliczyc rat leasingowych od przychodu</strong> (ryczalt nie pozwala na odliczanie kosztow). Ale nadal mozesz:</p>
+  <ul>
+    <li>Odliczyc <strong>50% VAT</strong> od rat (samochod) lub <strong>100% VAT</strong> (maszyny)</li>
+    <li>Korzystac z leasingu jako formy finansowania (zamiast kredytu)</li>
+  </ul>
+  <p>Jesli Twoje koszty sa wysokie, warto rozwazyc przejscie na zasady ogolne lub podatek liniowy — moze sie bardziej oplacac.</p>
+</ServiceLayout>

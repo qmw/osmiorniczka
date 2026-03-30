@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const faqCategories = [
+  {
+    title: "Leasing",
+    items: [
+      { q: "Co to jest leasing?", a: "Leasing to forma finansowania, w ktorej firma leasingowa kupuje przedmiot (np. samochod, maszyne) i udostepnia go Twojej firmie w zamian za miesieczne raty. Po zakonczeniu umowy mozesz go wykupic." },
+      { q: "Leasing operacyjny czy finansowy — co wybrac?", a: "Operacyjny jest popularniejszy — cala rata netto to koszt firmy i odliczasz VAT. Finansowy jest lepszy, jesli chcesz byc wlascicielem od poczatku i amortyzowac srodek trwaly." },
+      { q: "Jaki jest minimalny okres leasingu?", a: "Dla leasingu operacyjnego minimalny okres to 24 miesiace (lub 40% normatywnego okresu amortyzacji). Dla finansowego nie ma ustawowego minimum." },
+      { q: "Czy moge wziac leasing bez wkladu wlasnego?", a: "Tak — wiele firm leasingowych oferuje leasing od 0% wkladu. Wymagana jest dobra historia finansowa firmy." },
+      { q: "Co sie dzieje po zakonczeniu leasingu?", a: "W leasingu operacyjnym mozesz wykupic przedmiot za wartosc rezydualna (1-15%) lub go zwrocic. W finansowym — wlasnosc przechodzi na Ciebie automatycznie." },
+      { q: "Czy leasing mozna splacic wczosniej?", a: "Tak, ale wiekszosc firm leasingowych pobiera prowizje za wczesniejszy wykup (zwykle 1-3% pozostalej kwoty). Warto to sprawdzic przed podpisaniem umowy." },
+    ]
+  },
+  {
+    title: "Kredyty firmowe",
+    items: [
+      { q: "Jaka jest roznica miedzy leasingiem a kredytem?", a: "W leasingu przedmiot nalezy do firmy leasingowej (Ty go uzywasz), w kredycie — kupujesz na siebie. Leasing jest szybszy, latwo dostepny i optymalny podatkowo. Kredyt daje wlasnosc od razu." },
+      { q: "Czy nowa firma moze dostac kredyt?", a: "Jest to trudniejsze niz leasing, ale mozliwe — zwlaszcza z gwarancja BGK de minimis. Minimum 3-6 miesiecy dzialalnosci." },
+      { q: "Co to jest gwarancja BGK de minimis?", a: "To bezplatne zabezpieczenie kredytu przez Bank Gospodarstwa Krajowego (do 80% kwoty). Ulatwia uzyskanie finansowania i moze obnizac oprocentowanie." },
+      { q: "Jakie dokumenty potrzebuje do kredytu firmowego?", a: "Dowod osobisty, NIP, deklaracje podatkowe (PIT/CIT), sprawozdania finansowe. Dla mikrofirm — KPiR lub ewidencja przychodow." },
+    ]
+  },
+  {
+    title: "O naszych uslugach",
+    items: [
+      { q: "Ile kosztuja uslugi brokera?", a: "Nic — nasze uslugi sa calkowicie bezplatne dla klienta. Wynagrodzenie otrzymujemy od firm leasingowych i bankow." },
+      { q: "Jak dlugo trwa proces?", a: "Oddzwaniamy w 15 minut, oferty masz w ciagu godziny, decyzja leasingowa w 24-48h. Caly proces od zapytania do podpisania umowy to 3-7 dni roboczych." },
+      { q: "Z iloma firmami wspolpracujecie?", a: "Wspolpracujemy z ponad 30 firmami leasingowymi i bankami w Polsce, w tym mLeasing, PKO Leasing, Millennium, Santander, EFL, PEKAO i wieloma innymi." },
+      { q: "Czy moge zobaczyc oferty przed podjęciem decyzji?", a: "Oczywiscie — przedstawiamy 3-5 najlepszych ofert z pelnym porownaniem (rata, koszt calkowity, warunki). Ty decydujesz, ktora wybrac. Bez presji." },
+    ]
+  }
+];
+
+const allFaqItems = faqCategories.flatMap(cat =>
+  cat.items.map(item => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": { "@type": "Answer", "text": item.a }
+  }))
+);
+---
+
+<BaseLayout
+  title="FAQ — Czesto Zadawane Pytania o Leasing i Kredyt | Osmiorniczka"
+  description="Odpowiedzi na najczesciej zadawane pytania o leasing, kredyty firmowe, faktoring i nasze uslugi brokerskie. Wszystko co musisz wiedziec."
+>
+  <section class="section-padding bg-[#FAFBFC]">
+    <div class="container-narrow">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-heading font-bold text-slate-900 mb-4">Czesto zadawane pytania</h1>
+        <p class="text-lg text-slate-500 max-w-2xl mx-auto">Odpowiedzi na najpopularniejsze pytania o leasing, kredyty i nasze uslugi.</p>
+      </div>
+
+      {faqCategories.map((category) => (
+        <div class="mb-10">
+          <h2 class="text-2xl font-heading font-bold text-slate-900 mb-4">{category.title}</h2>
+          <div class="space-y-3">
+            {category.items.map((item, i) => (
+              <details class="card group" open={i === 0}>
+                <summary class="font-heading font-semibold text-slate-800 cursor-pointer list-none flex items-center justify-between">
+                  {item.q}
+                  <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                </summary>
+                <p class="text-slate-600 mt-3">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      <div class="bg-gradient-to-br from-teal-50 via-white to-coral-50 rounded-3xl border border-slate-200 p-8 text-center mt-12">
+        <h2 class="text-2xl font-heading font-bold text-slate-900 mb-3">Nie znalazles odpowiedzi?</h2>
+        <p class="text-slate-500 mb-6">Zadzwon lub napisz — chetnie odpowiemy na kazde pytanie.</p>
+        <a href="/kontakt/" class="btn-primary">Skontaktuj sie z nami</a>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": allFaqItems
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Strona glowna", "item": "https://osmiorniczka.pl/" },
+      { "@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://osmiorniczka.pl/faq/" }
+    ]
+  })} />
+</BaseLayout>
