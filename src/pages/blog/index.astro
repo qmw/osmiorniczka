@@ -34,7 +34,7 @@ const categoryMap: Record<string, string> = {
                 const slug = post.url?.split('/').filter(Boolean).pop() || '';
                 return (
                   <img
-                    src={`/blog/${slug}.png`}
+                    src={`/blog/${slug}.webp`}
                     alt={post.frontmatter.title}
                     class="w-full h-48 object-cover"
                     loading="lazy"
