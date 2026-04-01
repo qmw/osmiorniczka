@@ -7,12 +7,14 @@ interface Props {
   description: string;
   h1: string;
   subtitle: string;
+  heroImage?: string;
+  heroAlt?: string;
   breadcrumbParent?: { name: string; url: string };
   breadcrumbCurrent: string;
   faq?: Array<{ question: string; answer: string }>;
 }
 
-const { title, description, h1, subtitle, breadcrumbParent, breadcrumbCurrent, faq = [] } = Astro.props;
+const { title, description, h1, subtitle, heroImage, heroAlt, breadcrumbParent, breadcrumbCurrent, faq = [] } = Astro.props;
 
 const breadcrumbItems = [
   { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://leasingpoprostu.pl/" }
@@ -62,6 +64,9 @@ breadcrumbItems.push({
           <a href="/kontakt/" class="btn-secondary">Napisz do nas</a>
         </div>
       </div>
+      {heroImage && (
+        <img src={heroImage} alt={heroAlt || h1} class="rounded-2xl mt-8 w-full max-w-md mx-auto" />
+      )}
     </div>
   </section>
 
