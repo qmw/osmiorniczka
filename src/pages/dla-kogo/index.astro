@@ -1,0 +1,132 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ContactForm from '../../components/ContactForm';
+---
+
+<BaseLayout
+  title="Leasing i Kredyty — Dla Kogo? JDG, Spółka, Ryczałt, Nowa Firma | Ośmiorniczka"
+  description="Sprawdź, jakie formy finansowania są dostępne dla Twojej firmy. Poradniki dla JDG, sp. z o.o., ryczałtowców, nowych firm i dużych przedsiębiorstw."
+>
+  <!-- Breadcrumbs -->
+  <nav class="bg-white border-b border-slate-100 py-3" aria-label="Breadcrumb">
+    <div class="container-wide">
+      <ol class="flex items-center gap-2 text-sm text-slate-500">
+        <li><a href="/" class="hover:text-teal-600 transition-colors">Strona główna</a></li>
+        <li><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></li>
+        <li class="text-slate-800 font-medium">Dla kogo</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="py-12 md:py-20" style="background: linear-gradient(135deg, #D1F5F4 0%, #FAFBFC 100%);">
+    <div class="container-wide max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-slate-900 mb-4">Finansowanie dla Twojej firmy</h1>
+      <p class="text-lg text-slate-600 mb-6">Warunki leasingu i kredytu różnią się w zależności od formy prawnej, stażu firmy i sposobu rozliczania podatków. Wybierz swoją sytuację — przygotowaliśmy dedykowany poradnik.</p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="/kalkulator-leasingu" class="btn-primary">Oblicz ratę leasingu</a>
+        <a href="/blog/" class="btn-secondary">Czytaj poradniki</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Karty -->
+  <section class="section-padding bg-white">
+    <div class="container-wide">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-slate-900 mb-8 text-center">Wybierz swoją formę działalności</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+        <a href="/dla-kogo/jdg/" class="card group">
+          <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center mb-4 group-hover:bg-teal-100 transition-colors">
+            <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-800 mb-2 group-hover:text-teal-600 transition-colors">Jednoosobowa działalność (JDG)</h3>
+          <p class="text-sm text-slate-500 mb-3">Najpopularniejsza forma wśród leasingobiorców. Od 0% wkładu, szybka decyzja, minimum formalności.</p>
+          <span class="text-sm font-semibold text-teal-600 inline-flex items-center gap-1">Dowiedz się więcej <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></span>
+        </a>
+
+        <a href="/dla-kogo/spolka-zoo/" class="card group">
+          <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center mb-4 group-hover:bg-teal-100 transition-colors">
+            <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-800 mb-2 group-hover:text-teal-600 transition-colors">Spółka z o.o.</h3>
+          <p class="text-sm text-slate-500 mb-3">Wyższe limity, więcej dokumentów. Sprawdź, co banki i leasingodawcy wymagają od sp. z o.o.</p>
+          <span class="text-sm font-semibold text-teal-600 inline-flex items-center gap-1">Dowiedz się więcej <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></span>
+        </a>
+
+        <a href="/dla-kogo/nowa-firma/" class="card group">
+          <div class="w-12 h-12 bg-coral-50 rounded-xl flex items-center justify-center mb-4 group-hover:bg-coral-100 transition-colors">
+            <svg class="w-6 h-6 text-coral-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.841m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-800 mb-2 group-hover:text-teal-600 transition-colors">Nowa firma (do 12 mies.)</h3>
+          <p class="text-sm text-slate-500 mb-3">Trudniej, ale nie niemożliwie. Leasing nawet od 1. dnia, kredyt z gwarancją BGK.</p>
+          <span class="text-sm font-semibold text-teal-600 inline-flex items-center gap-1">Dowiedz się więcej <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></span>
+        </a>
+
+        <a href="/dla-kogo/ryczalt/" class="card group">
+          <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center mb-4 group-hover:bg-teal-100 transition-colors">
+            <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V13.5zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V18zm2.498-6.75h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V13.5zm0 2.25h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V18zm2.504-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V18zm2.498-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zM8.25 6h7.5v2.25h-7.5V6zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0012 2.25z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-800 mb-2 group-hover:text-teal-600 transition-colors">Ryczałt ewidencjonowany</h3>
+          <p class="text-sm text-slate-500 mb-3">Inne zasady rozliczania rat. Sprawdź, co możesz odliczyć na ryczałcie.</p>
+          <span class="text-sm font-semibold text-teal-600 inline-flex items-center gap-1">Dowiedz się więcej <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></span>
+        </a>
+
+        <a href="/dla-kogo/duze-firmy/" class="card group">
+          <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center mb-4 group-hover:bg-teal-100 transition-colors">
+            <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-800 mb-2 group-hover:text-teal-600 transition-colors">Duże firmy i korporacje</h3>
+          <p class="text-sm text-slate-500 mb-3">Floty, duże linie kredytowe, indywidualne warunki. Finansowanie na miarę.</p>
+          <span class="text-sm font-semibold text-teal-600 inline-flex items-center gap-1">Dowiedz się więcej <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Nie wiesz? -->
+  <section class="section-padding bg-[#FAFBFC]">
+    <div class="container-narrow">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-slate-900 mb-4 text-center">Nie wiesz, co wybrać?</h2>
+      <p class="text-center text-slate-500 mb-8 max-w-2xl mx-auto">To normalne — opcji jest dużo. Poniższe artykuły pomogą Ci zorientować się w temacie.</p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="/blog/leasing-dla-nowej-firmy/" class="card group">
+          <h3 class="font-heading font-semibold text-slate-800 mb-1 group-hover:text-teal-600 transition-colors">Leasing dla nowej firmy</h3>
+          <p class="text-sm text-slate-500">Czy dostaniesz leasing bez historii? Tak — oto jak.</p>
+        </a>
+        <a href="/blog/leasing-na-ryczalcie/" class="card group">
+          <h3 class="font-heading font-semibold text-slate-800 mb-1 group-hover:text-teal-600 transition-colors">Leasing na ryczałcie</h3>
+          <p class="text-sm text-slate-500">Jak rozliczać raty leasingu na ryczałcie ewidencjonowanym.</p>
+        </a>
+        <a href="/blog/jakie-dokumenty-do-leasingu/" class="card group">
+          <h3 class="font-heading font-semibold text-slate-800 mb-1 group-hover:text-teal-600 transition-colors">Jakie dokumenty do leasingu?</h3>
+          <p class="text-sm text-slate-500">Lista dokumentów per forma prawna — JDG, sp. z o.o., S.A.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding bg-white">
+    <div class="container-narrow">
+      <div class="bg-gradient-to-br from-teal-50 via-white to-coral-50 rounded-3xl border border-slate-200 p-8 md:p-12 text-center">
+        <h2 class="text-2xl md:text-3xl font-heading font-bold text-slate-900 mb-3">Potrzebujesz pomocy w wyborze?</h2>
+        <p class="text-slate-500 mb-6">Opisz swoją sytuację — podpowiemy, co będzie najkorzystniejsze. Zero zobowiązań.</p>
+        <div class="max-w-lg mx-auto">
+          <ContactForm client:visible variant="compact" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://leasingpoprostu.pl/" },
+      { "@type": "ListItem", "position": 2, "name": "Dla kogo", "item": "https://leasingpoprostu.pl/dla-kogo/" }
+    ]
+  })} />
+</BaseLayout>
