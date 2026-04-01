@@ -64,3 +64,7 @@ Add missing internal links to blog posts 1-8 (jak-wziac-leasing-na-firme, ile-ko
 ## 2026-03-30
 
 Add missing internal links to blog posts 17-23 (leasing-czy-wynajem-dlugoterminowy, ile-kosztuje-kredyt-firmowy, co-mozna-wziac-w-leasing, leasing-na-ryczalcie, jak-wybrac-firme-leasingowa, dotacje-dla-firm-2026, co-zrobic-gdy-firma-leasingowa-odmowila). 3-5 new links per article, naturally within existing text.
+
+## 2026-04-01
+
+please recall out last session
