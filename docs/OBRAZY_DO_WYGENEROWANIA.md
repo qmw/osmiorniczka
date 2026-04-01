@@ -61,7 +61,7 @@
 - [x] dotacje-dla-firm-2026-programy.png
 - [x] ubezpieczenie-gap-w-leasingu-schemat.png
 
-### Gotowe — strony (10)
+### Gotowe — strony (13)
 - [x] leasing-hero.png
 - [x] kredyty-hero.png
 - [x] leasing-fotowoltaika-hero.png
@@ -72,23 +72,12 @@
 - [x] kredyt-na-start-hero.png
 - [x] kredyt-bgk-hero.png
 - [x] faktoring-hero.png
+- [x] leasing-samochody-hero.png
+- [x] leasing-maszyny-hero.png
+- [x] leasing-it-hero.png
 
-### Brakujące — podstrony usługowe (3)
-- [ ] leasing-samochody-hero.png → `public/leasing-samochody-hero.png`
-- [ ] leasing-maszyny-hero.png → `public/leasing-maszyny-hero.png`
-- [ ] leasing-it-hero.png → `public/leasing-it-hero.png`
-
-### Podsumowanie: 56 gotowych, 3 brakujących
+### Podsumowanie: 59 gotowych, 0 brakujących — KOMPLET!
 
 ---
 
-## Prompty — brakujące podstrony usługowe
-
-### `leasing-samochody-hero.png`
-> Cute pink cartoon octopus character (kawaii style) sitting proudly in or next to a shiny car, one tentacle on the steering wheel, another holding car keys. Happy, excited expression. Flat illustration, pastel colors (pink, teal, blue), clean background. No text. 16:9
-
-### `leasing-maszyny-hero.png`
-> Cute pink cartoon octopus character (kawaii style) operating a machine or standing next to industrial equipment (CNC, excavator). Wearing a tiny hard hat. Competent, professional vibe. Flat illustration, pastel colors (pink, teal, amber), clean background. No text. 16:9
-
-### `leasing-it-hero.png`
-> Cute pink cartoon octopus character (kawaii style) surrounded by IT equipment: laptop, server rack, monitor, printer. Each tentacle using a different device. Tech-savvy vibe. Flat illustration, pastel colors (pink, teal, blue), clean background. No text. 16:9
+## Wszystkie obrazy wygenerowane!
