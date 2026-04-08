@@ -68,3 +68,7 @@ Add missing internal links to blog posts 17-23 (leasing-czy-wynajem-dlugotermino
 ## 2026-04-01
 
 please recall out last session
+
+## 2026-04-08
+
+C:\Users\piotr\Documents\changes.pdf please see these changes that are requested in texts in the page
