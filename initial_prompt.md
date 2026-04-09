@@ -72,3 +72,7 @@ please recall out last session
 ## 2026-04-08
 
 C:\Users\piotr\Documents\changes.pdf please see these changes that are requested in texts in the page
+
+## 2026-04-09
+
+please change all email addresses to osmiorniczka@leasingpoprostu.pl

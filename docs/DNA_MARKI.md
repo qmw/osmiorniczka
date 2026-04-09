@@ -142,7 +142,7 @@ W tekstach Ośmiorniczka to **"my"** — nie "firma", nie "zespół ekspertów":
 | **Marka / maskotka** | Ośmiorniczka |
 | **Pełna nazwa** | Ośmiorniczka - Leasing Po Prostu |
 | **Tagline** | "Leasing po prostu" |
-| **Email** | kontakt@leasingpoprostu.pl |
+| **Email** | osmiorniczka@leasingpoprostu.pl |
 | **Domeny dodatkowe (redirect)** | leasingikredyt.pl, osmiorniczka.eu (opcja) |
 
 ---
