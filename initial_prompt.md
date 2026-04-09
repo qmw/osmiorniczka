@@ -76,3 +76,7 @@ C:\Users\piotr\Documents\changes.pdf please see these changes that are requested
 ## 2026-04-09
 
 please change all email addresses to osmiorniczka@leasingpoprostu.pl
+
+## 2026-04-09
+
+tutaj: https://leasingpoprostu.pl/leasing/samochody/ są błędy. Od tekstu "Leasing operacyjny samochodu — korzyści podatkowe" przepisać treść o limitach kosztów podatkowych (100 000 / 150 000 / 225 000 zł), VAT 50/100%, brak amortyzacji; zmienić nagłówek na "Limit kosztów podatkowych — co to oznacza?" i dodać intro do tabeli porównania ofert.
