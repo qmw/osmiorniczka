@@ -4,17 +4,19 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Brand accent — cobalt blue scale (palette key kept as `teal` to avoid
+        // touching ~200 className references; visual color is cobalt).
         teal: {
-          50:  '#D1F5F4',
-          100: '#B3EEEC',
-          200: '#7DE0DE',
-          300: '#47D2CF',
-          400: '#1ABFBC',
-          500: '#0EA5A3',
-          600: '#0C8E8C',
-          700: '#087F7D',
-          800: '#065E5D',
-          900: '#044342',
+          50:  '#EEF3FB',
+          100: '#D6E1F4',
+          200: '#ADC2EA',
+          300: '#7C9CDC',
+          400: '#4D78CC',
+          500: '#1E56BD',
+          600: '#0047AB',
+          700: '#00368A',
+          800: '#002868',
+          900: '#001A48',
         },
         coral: {
           50:  '#FFF0E6',

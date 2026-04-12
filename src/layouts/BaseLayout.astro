@@ -69,21 +69,48 @@ const siteName = 'LeasingPoProstu.pl';
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    "name": "Ośmiorniczka - Broker Leasingu i Kredytów",
-    "description": "Niezależny broker leasingu i kredytów firmowych. Porównujemy oferty 30+ firm leasingowych i banków.",
+    "@id": `${siteUrl}/#business`,
+    "name": "Ośmiorniczka - Leasing Po Prostu",
+    "legalName": "Enigma Pośrednictwo-Prawno-Finansowe Paulina Wysoczańska",
+    "description": "Niezależny broker leasingu i kredytów firmowych z Wrocławia. Porównujemy oferty 30+ firm leasingowych i banków.",
     "url": siteUrl,
     "logo": `${siteUrl}/logo.svg`,
+    "image": `${siteUrl}/paulina-960.jpg`,
     "telephone": "+48-519-533-252",
+    "email": "osmiorniczka@leasingpoprostu.pl",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "ul. Stanisławowska 47",
+      "addressLocality": "Wrocław",
+      "postalCode": "54-611",
+      "addressRegion": "dolnośląskie",
       "addressCountry": "PL"
     },
-    "areaServed": {
-      "@type": "Country",
-      "name": "Poland"
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.0713853,
+      "longitude": 17.0016884
     },
+    "areaServed": [
+      { "@type": "City", "name": "Wrocław" },
+      { "@type": "AdministrativeArea", "name": "dolnośląskie" },
+      { "@type": "Country", "name": "Poland" }
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Paulina Wysoczańska"
+    },
+    "foundingDate": "2021",
+    "taxID": "8941842155",
+    "vatID": "PL8941842155",
     "serviceType": ["Leasing", "Kredyt firmowy", "Faktoring"],
-    "priceRange": "$$"
+    "priceRange": "$$",
+    "sameAs": [
+      "https://www.facebook.com/pau.wys",
+      "https://www.linkedin.com/in/paulina-wysoczańska/",
+      "https://www.instagram.com/p.wysoczanska/",
+      "https://www.pkt.pl/firma/enigma-posrednictwo-prawno-finansowe-paulina-wysoczanska-6540303"
+    ]
   })} />
 
   <slot name="head" />
@@ -160,7 +187,18 @@ const siteName = 'LeasingPoProstu.pl';
             <span class="font-heading font-bold text-lg text-white">Ośmiorniczka</span>
           </div>
           <p class="text-sm text-slate-400 mb-4">Darmowa wiedza o leasingu i kredytach firmowych. Poradniki, kalkulatory, porównania.</p>
-          <p class="text-xs text-slate-500">"Wiele ramion, jedno rozwiązanie"</p>
+          <p class="text-xs text-slate-500 mb-5">"Wiele ramion, jedno rozwiązanie"</p>
+          <div class="flex items-center gap-3">
+            <a href="https://www.facebook.com/pau.wys" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-slate-400 hover:text-teal-400 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/paulina-wysoczańska/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-slate-400 hover:text-teal-400 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/p.wysoczanska/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-slate-400 hover:text-teal-400 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
         </div>
 
         <!-- Leasing -->
@@ -201,11 +239,18 @@ const siteName = 'LeasingPoProstu.pl';
         </div>
       </div>
 
-      <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-xs text-slate-500">&copy; {new Date().getFullYear()} Ośmiorniczka — Leasing Po Prostu. Wszelkie prawa zastrzeżone.</p>
-        <div class="flex gap-6 text-xs text-slate-500">
-          <a href="/polityka-prywatnosci/" class="hover:text-slate-300 transition-colors">Polityka prywatności</a>
-          <a href="/regulamin/" class="hover:text-slate-300 transition-colors">Regulamin</a>
+      <div class="border-t border-slate-800 pt-8">
+        <div class="text-xs text-slate-400 leading-relaxed mb-6">
+          <p class="font-semibold text-slate-300 mb-1">Enigma Pośrednictwo-Prawno-Finansowe Paulina Wysoczańska</p>
+          <p>ul. Stanisławowska 47, 54-611 Wrocław &middot; NIP: 8941842155 &middot; REGON: 365779779</p>
+          <p>tel. <a href="tel:+48519533252" class="hover:text-teal-400 transition-colors">+48 519 533 252</a> &middot; <a href="mailto:osmiorniczka@leasingpoprostu.pl" class="hover:text-teal-400 transition-colors">osmiorniczka@leasingpoprostu.pl</a></p>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-xs text-slate-500">&copy; {new Date().getFullYear()} Ośmiorniczka — Leasing Po Prostu. Wszelkie prawa zastrzeżone.</p>
+          <div class="flex gap-6 text-xs text-slate-500">
+            <a href="/polityka-prywatnosci/" class="hover:text-slate-300 transition-colors">Polityka prywatności</a>
+            <a href="/regulamin/" class="hover:text-slate-300 transition-colors">Regulamin</a>
+          </div>
         </div>
       </div>
     </div>

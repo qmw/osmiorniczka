@@ -80,3 +80,7 @@ please change all email addresses to osmiorniczka@leasingpoprostu.pl
 ## 2026-04-09
 
 tutaj: https://leasingpoprostu.pl/leasing/samochody/ są błędy. Od tekstu "Leasing operacyjny samochodu — korzyści podatkowe" przepisać treść o limitach kosztów podatkowych (100 000 / 150 000 / 225 000 zł), VAT 50/100%, brak amortyzacji; zmienić nagłówek na "Limit kosztów podatkowych — co to oznacza?" i dodać intro do tabeli porównania ofert.
+
+## 2026-04-12
+
+hey ok so last time we met you suggested that we add the data for the person this page is for. Her name is Paulina Wysoczańska, she is already registered in pkt.pl and you saw an opportunity to hit with SEO in Wroclaw mainly... [Paulina greenlit the compromise: add bio + footer/contact registry data, optional photo thumbnail. Provided bio text + socials (FB pau.wys, LinkedIn paulina-wysoczańska, IG p.wysoczanska). Doesn't know what GBP is. Plus: change greenish accent color to cobalt; new icons coming later from a marketing-veteran friend. Photo at C:\Users\piotr\Downloads\9G2A6267.jpg]
