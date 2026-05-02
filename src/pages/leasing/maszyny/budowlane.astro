@@ -1,0 +1,82 @@
+---
+import ServiceLayout from '../../../layouts/ServiceLayout.astro';
+
+const faq = [
+  { question: "Jakie maszyny budowlane można leasingować?", answer: "Praktycznie każde — koparki gąsienicowe i kołowe, miniładowarki, ładowarki teleskopowe, dźwigi, walce, betoniarki, agregaty prądotwórcze, młoty, zagęszczarki. Zarówno nowe, jak i używane." },
+  { question: "Jaki wkład własny przy leasingu koparki?", answer: "Dla nowej koparki od uznanego producenta (Caterpillar, Komatsu, JCB, Volvo) — od 0-10%. Dla używanej do 5 lat — 10-15%. Powyżej 5 lat lub mniej znanej marki — 15-25%." },
+  { question: "Czy leasing maszyn budowlanych jest dostępny dla nowych firm?", answer: "Tak, choć z wyższym wkładem (15-25%) i często krótszym okresem (max 4-5 lat zamiast 6-7). Najłatwiej, gdy operator ma doświadczenie w branży udokumentowane wcześniejszym zatrudnieniem." },
+  { question: "Jak długo trwa decyzja leasingowa na koparkę?", answer: "Standardowo 24-48h dla nowej maszyny przy kompletnych dokumentach. Dla używanej + 1-2 dni na wycenę rzeczoznawcy. Cały proces od wniosku do wydania maszyny — zwykle 5-10 dni." },
+  { question: "Czy mogę leasingować koparkę używaną sprowadzoną z Niemiec?", answer: "Tak, to bardzo popularne. Wymagana jest faktura zakupu (lub kontrakt + tłumaczenie), opinia rzeczoznawcy o stanie technicznym i wartości oraz dokumenty pojazdu. Niektóre firmy leasingowe mają preferencyjne warunki dla maszyn z certyfikatem (np. CE, raport BVRLA)." }
+];
+---
+
+<ServiceLayout
+  title="Leasing Maszyn Budowlanych 2026 — Koparki, Ładowarki, Dźwigi | Ośmiorniczka"
+  description="Leasing maszyn budowlanych dla firm budowlanych: koparki, ładowarki, dźwigi, walce, betoniarki. Nowe i używane, od 0% wkładu, 100% VAT do odliczenia."
+  h1="Leasing maszyn budowlanych — koparki, ładowarki, dźwigi"
+  subtitle="Finansowanie sprzętu budowlanego nowego i używanego. Decyzja w 24-48h, wkład od 0%, cała rata netto to koszt."
+  breadcrumbParent={{ name: "Maszyny", url: "/leasing/maszyny/" }}
+  heroImage="/leasing-maszyny-hero.webp"
+  breadcrumbCurrent="Maszyny budowlane"
+  faq={faq}
+>
+  <h2>Jakie maszyny budowlane finansujemy?</h2>
+  <ul>
+    <li><strong>Koparki</strong> — gąsienicowe (8-50 t), kołowe, miniaturowe (do 6 t)</li>
+    <li><strong>Ładowarki</strong> — kołowe, teleskopowe, miniładowarki Bobcat</li>
+    <li><strong>Dźwigi i podnośniki</strong> — żurawie samojezdne, podnośniki nożycowe i koszowe</li>
+    <li><strong>Walce drogowe</strong> — wibracyjne, statyczne, ogumione</li>
+    <li><strong>Betoniarki i pompy do betonu</strong> — samochodowe, stacjonarne</li>
+    <li><strong>Agregaty i kompresory</strong> — prądotwórcze, sprężarkowe</li>
+    <li><strong>Sprzęt drobny</strong> — młoty, zagęszczarki, piły, mieszarki</li>
+  </ul>
+
+  <h3>Typowe warunki leasingu maszyn budowlanych w 2026</h3>
+  <table>
+    <thead>
+      <tr><th>Parametr</th><th>Maszyna nowa</th><th>Maszyna używana (do 5 lat)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Wkład własny</td><td>0-10%</td><td>10-20%</td></tr>
+      <tr><td>Okres umowy</td><td>36-72 miesięcy</td><td>24-60 miesięcy</td></tr>
+      <tr><td>Wartość wykupu</td><td>1-10%</td><td>1-15%</td></tr>
+      <tr><td>Czas decyzji</td><td>24-48h</td><td>3-5 dni (z wyceną)</td></tr>
+      <tr><td>Wymagane dokumenty</td><td>Standard + faktura proforma</td><td>+ opinia rzeczoznawcy</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Koparka gąsienicowa 20-tonowa — przykładowy leasing</h3>
+  <p>Założenia: nowa koparka 20-tonowa, wartość 600 000 zł netto, wkład 10%, okres 60 miesięcy, wykup 1%, oprocentowanie ~8%.</p>
+  <table>
+    <thead>
+      <tr><th>Element</th><th>Kwota</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Wartość netto</td><td>600 000 zł</td></tr>
+      <tr><td>Wkład własny (10%)</td><td>60 000 zł</td></tr>
+      <tr><td>Rata miesięczna netto</td><td>~10 800 zł</td></tr>
+      <tr><td>Wykup (1%)</td><td>6 000 zł</td></tr>
+      <tr><td><strong>Łączny koszt netto</strong></td><td><strong>~714 000 zł</strong></td></tr>
+    </tbody>
+  </table>
+  <p class="text-sm text-slate-500"><em>Przykład orientacyjny. Realne stawki zależą od kondycji firmy, marki maszyny i bieżącego WIBOR. Po dokładną kalkulację pod konkretną maszynę — <a href="/kontakt/">napisz do nas</a>.</em></p>
+
+  <h3>Maszyny używane sprowadzane z zagranicy</h3>
+  <p>Bardzo częsta sytuacja w branży — koparki i ładowarki sprowadzane z Niemiec, Holandii, Belgii. Co warto wiedzieć:</p>
+  <ul>
+    <li><strong>Wycena rzeczoznawcy</strong> — wymagana praktycznie zawsze. Kosztuje 500-1 500 zł.</li>
+    <li><strong>Maksymalny wiek</strong> — większość firm leasingowych: do 7-10 lat na rozpoczęcie umowy + maszyna nie starsza niż 12-15 lat na koniec.</li>
+    <li><strong>Marka ma znaczenie</strong> — Caterpillar, Volvo, Komatsu, JCB, Hitachi → łatwiej. Mniejsze marki → wyższy wkład.</li>
+    <li><strong>Faktura</strong> — w przypadku zakupu od osoby prywatnej w UE warto skorzystać z pośrednictwa firmy handlowej, która wystawi fakturę VAT.</li>
+  </ul>
+
+  <h3>Dla kogo szczególnie się sprawdza</h3>
+  <ul>
+    <li>Firmy <strong>budowlane wykonawcze</strong> rozszerzające park maszynowy pod konkretne kontrakty</li>
+    <li><strong>Firmy ziemne i drogowe</strong> z zapotrzebowaniem na ciężki sprzęt</li>
+    <li><strong>Wynajem maszyn</strong> — leasing operacyjny + wynajem to klasyczny model</li>
+    <li>Nowe firmy z doświadczeniem operatora i pierwszym kontraktem na horyzoncie</li>
+  </ul>
+
+  <p>Pełne porównanie kosztów: <a href="/blog/kredyt-inwestycyjny-czy-leasing-maszyn/">Kredyt inwestycyjny czy leasing maszyn — co się bardziej opłaca</a>.</p>
+</ServiceLayout>

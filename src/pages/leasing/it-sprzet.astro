@@ -1,31 +1,79 @@
 ---
 import ServiceLayout from '../../layouts/ServiceLayout.astro';
 const faq = [
-  { question: "Czy mogę leasingować oprogramowanie?", answer: "Tak — wiele firm leasingowych oferuje leasing oprogramowania razem ze sprzętem. Licencje Microsoft, Adobe i inne mogą być włączone w umowę leasingową." },
-  { question: "Jaki jest minimalny wkład własny na sprzęt IT?", answer: "Od 0% dla firm z dobrą historią. Sprzęt IT jest dobrze oceniany przez firmy leasingowe ze względu na standardową wartość rynkową." },
-  { question: "Czy mogę leasingować pojedynczy laptop?", answer: "Tak, minimalna wartość przedmiotu leasingu to zwykle 5 000-10 000 zł netto. Dla niższych kwot lepszy bywa leasing pakietowy (kilka urządzeń w jednej umowie)." }
+  { question: "Ile kosztuje leasing laptopa biznesowego?", answer: "Laptop biznesowy za 6 000 zł netto przy leasingu na 36 miesięcy z wkładem 10% i wykupem 1% — rata ok. 175-195 zł netto miesięcznie. Cała rata jest kosztem podatkowym. Pakiet 5 laptopów (30 000 zł) — rata ok. 880-980 zł netto." },
+  { question: "Ile kosztuje leasing serwera?", answer: "Serwer rack 2U klasy średniej za 50 000 zł netto, 48 miesięcy, wkład 10%, wykup 1% — rata ok. 1 200-1 350 zł netto miesięcznie. Z infrastrukturą sieciową (switche, firewall, UPS) typowo wartość pakietu rośnie do 80-150 tys., a rata do 2-3,5 tys. zł." },
+  { question: "Czy mogę leasingować oprogramowanie?", answer: "Tak — wiele firm leasingowych oferuje leasing oprogramowania razem ze sprzętem. Licencje Microsoft, Adobe, ERP, CAD — można włączyć w umowę leasingową, jeśli kupujesz je razem z infrastrukturą sprzętową. Sam soft (bez sprzętu) — rzadziej, ale też bywa." },
+  { question: "Czy mogę leasingować pojedynczy laptop?", answer: "Technicznie tak, ale minimalna wartość przedmiotu leasingu to zwykle 5 000-10 000 zł netto. Dla niższych kwot lepszy bywa leasing pakietowy (kilka urządzeń w jednej umowie) albo leasing konsumencki przez sklep IT." },
+  { question: "Leasing czy zakup sprzętu IT — co lepsze?", answer: "Dla większości firm leasing operacyjny — sprzęt IT starzeje się szybko, leasing pozwala wymienić go po 2-3 latach bez konieczności sprzedawania starego. Plus: 100% VAT do odliczenia, cała rata to koszt, brak limitu jak przy autach. Zakup ma sens głównie dla bardzo trwałego sprzętu (serwery NAS, infrastruktura sieciowa) lub gdy masz nadwyżkę gotówki." }
 ];
 ---
 <ServiceLayout
-  title="Leasing Sprzętu IT 2026 — Komputery, Serwery, Oprogramowanie | Ośmiorniczka"
-  description="Leasing sprzętu IT dla firm — komputery, laptopy, serwery, drukarki, oprogramowanie. Od 0% wkładu, 100% VAT w odliczeniu. Porównaj oferty."
-  h1="Leasing sprzętu IT — komputery, serwery, oprogramowanie"
-  subtitle="Finansuj infrastrukturę IT firmy bez zamrażania kapitału. Laptopy, serwery, drukarki, a nawet oprogramowanie — wszystko w wygodnych ratach."
+  title="Leasing Sprzętu IT 2026 — Cena, Komputery, Serwery, Oprogramowanie | Ośmiorniczka"
+  description="Ile kosztuje leasing sprzętu IT? Konkretne raty: laptop od 175 zł/m, serwer od 1 200 zł/m. Komputery, serwery, drukarki, oprogramowanie — od 0% wkładu, 100% VAT."
+  h1="Leasing sprzętu IT — cena, raty, warunki 2026"
+  subtitle="Finansuj infrastrukturę IT firmy bez zamrażania kapitału. Konkretne raty dla laptopów, serwerów i całych pakietów. 100% VAT, cała rata to koszt."
   breadcrumbParent={{ name: "Leasing", url: "/leasing/" }}
   heroImage="/leasing-it-hero.webp"
   breadcrumbCurrent="Sprzęt IT"
   faq={faq}
 >
-  <h2>Dlaczego leasing sprzętu IT?</h2>
-  <p>Technologia starzeje się szybko. Leasing pozwala na <strong>regularną wymianę sprzętu</strong> bez dużych jednorazowych wydatków. Po zakończeniu umowy możesz wykupić sprzęt za symboliczną kwotę lub wymienić na nowszy.</p>
-  <h3>Co możesz leasingować?</h3>
+  <h2>Ile kosztuje leasing sprzętu IT? — przykładowe raty</h2>
+  <p>Poniższe przykłady przy założeniu: leasing operacyjny, wkład własny 10%, wykup 1%, oprocentowanie ~8% (typowe dla 2026). Cała rata netto to koszt podatkowy.</p>
+
+  <h3>Laptopy biznesowe</h3>
+  <table>
+    <thead>
+      <tr><th>Sprzęt</th><th>Wartość netto</th><th>Okres</th><th>Rata miesięczna netto</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Laptop biurowy (ThinkPad / Dell Latitude)</td><td>5 000 zł</td><td>36 mies.</td><td>~145 zł</td></tr>
+      <tr><td>Laptop biznesowy średni</td><td>8 000 zł</td><td>36 mies.</td><td>~235 zł</td></tr>
+      <tr><td>Laptop developerski / projektowy</td><td>15 000 zł</td><td>36 mies.</td><td>~440 zł</td></tr>
+      <tr><td>Pakiet 5× laptop biznesowy</td><td>40 000 zł</td><td>36 mies.</td><td>~1 175 zł</td></tr>
+      <tr><td>Pakiet 10× laptop biznesowy</td><td>80 000 zł</td><td>48 mies.</td><td>~1 950 zł</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Serwery i infrastruktura</h3>
+  <table>
+    <thead>
+      <tr><th>Sprzęt</th><th>Wartość netto</th><th>Okres</th><th>Rata miesięczna netto</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Serwer rack 1U/2U</td><td>30 000 zł</td><td>48 mies.</td><td>~720 zł</td></tr>
+      <tr><td>Serwer wydajny + macierz</td><td>80 000 zł</td><td>48 mies.</td><td>~1 920 zł</td></tr>
+      <tr><td>Pakiet serwerownia (2× serwer + switche + firewall + UPS)</td><td>150 000 zł</td><td>60 mies.</td><td>~3 050 zł</td></tr>
+      <tr><td>Serwerownia premium z rozszerzeniami</td><td>300 000 zł</td><td>60 mies.</td><td>~6 100 zł</td></tr>
+    </tbody>
+  </table>
+  <p class="text-sm text-slate-500"><em>Wartości orientacyjne. Realna oferta zależy od kondycji firmy i bieżących stóp procentowych. Po dokładną kalkulację dla swojej konfiguracji — <a href="/kontakt/">napisz do nas</a>.</em></p>
+
+  <h2>Co możesz leasingować</h2>
   <ul>
-    <li><strong>Komputery i laptopy</strong> — stacje robocze, laptopy biznesowe, ultrabooki</li>
-    <li><strong>Serwery i infrastruktura sieciowa</strong> — serwery rack, NAS, switche, firewalle</li>
-    <li><strong>Drukarki i skanery</strong> — laserowe, wielofunkcyjne, plotery wielkoformatowe</li>
-    <li><strong>Oprogramowanie</strong> — licencje Microsoft 365, Adobe, ERP, CAD/CAM</li>
-    <li><strong>Sprzęt AV</strong> — monitory, projektory, systemy wideokonferencyjne</li>
+    <li><strong>Komputery i laptopy</strong> — stacje robocze, laptopy biznesowe, ultrabooki, MacBooki</li>
+    <li><strong>Serwery i infrastruktura sieciowa</strong> — serwery rack, NAS, switche, firewalle, UPS, szafy serwerowe</li>
+    <li><strong>Drukarki i skanery</strong> — laserowe, wielofunkcyjne, plotery wielkoformatowe, drukarki etykietowe</li>
+    <li><strong>Oprogramowanie</strong> — licencje Microsoft 365, Adobe, ERP, CAD/CAM (w pakiecie ze sprzętem)</li>
+    <li><strong>Sprzęt AV</strong> — monitory, projektory, systemy wideokonferencyjne, ekrany do sal konferencyjnych</li>
+    <li><strong>Sprzęt sieciowy specjalistyczny</strong> — punkty dostępowe, kontrolery, kable strukturalne</li>
   </ul>
-  <h3>Korzyści podatkowe</h3>
-  <p>Leasing operacyjny sprzętu IT daje <strong>100% odliczenia VAT</strong> od każdej raty (w przeciwieństwie do samochodów). Cała rata netto to koszt uzyskania przychodu. Brak limitu wartości jak przy autach.</p>
+
+  <h2>Leasing IT czy zakup — co się bardziej opłaca?</h2>
+  <p>Dla większości firm leasing operacyjny sprzętu IT wygrywa z zakupem za gotówkę. Powody:</p>
+  <ul>
+    <li><strong>Szybkie starzenie się technologii</strong> — laptop kupiony dziś za 8 tys. zł za 3 lata wart jest 2-3 tys. Leasing pozwala go wymienić bez konieczności sprzedawania.</li>
+    <li><strong>100% VAT do odliczenia</strong> — od każdej raty (w przeciwieństwie do samochodów osobowych z limitem 50%).</li>
+    <li><strong>Cała rata to koszt podatkowy</strong> — przy zakupie odliczasz tylko amortyzację (3-5 lat dla sprzętu IT), więc rozłożenie kosztu jest podobne, ale leasing daje większą elastyczność.</li>
+    <li><strong>Brak limitu wartości</strong> — w przeciwieństwie do aut osobowych (150/225 tys. zł), tu nie ma żadnych limitów podatkowych.</li>
+    <li><strong>Nie zamraża kapitału</strong> — gotówka zostaje w firmie na obrotówkę.</li>
+  </ul>
+  <p>Zakup ma sens głównie dla bardzo trwałego sprzętu (serwery wysokiej klasy z dużą rezerwą wydajności na 7+ lat), bardzo niskobudżetowego (pojedynczy laptop za 3 tys.) lub gdy masz nadwyżkę gotówki, której nie umiesz lepiej zainwestować.</p>
+
+  <h3>Alternatywa: DaaS / HaaS</h3>
+  <p>Dla niektórych firm alternatywą zarówno dla leasingu, jak i zakupu jest <strong>Device as a Service (DaaS)</strong> lub <strong>Hardware as a Service (HaaS)</strong> — model abonamentowy, w którym dostawca zapewnia sprzęt, gwarancję i serwis za jedną miesięczną opłatę. Różnica względem leasingu: sprzęt nigdy nie staje się Twoją własnością, ale serwis i wymiana są wliczone. Sprawdza się dla firm, które chcą "zapomnieć" o IT i mieć stałą stawkę miesięczną. Dla firm chcących wykupić sprzęt na koniec — leasing jest tańszy.</p>
+
+  <h2>Korzyści podatkowe leasingu sprzętu IT</h2>
+  <p>Leasing operacyjny sprzętu IT daje <strong>100% odliczenia VAT</strong> od każdej raty. Cała rata netto to koszt uzyskania przychodu. Brak limitu wartości jak przy autach — możesz leasingować serwer za 500 tys. i całość jest kosztem.</p>
+  <p>Pełna mechanika podatkowa: <a href="/blog/leasing-operacyjny-vs-finansowy/">Leasing operacyjny czy finansowy — różnice podatkowe</a>.</p>
 </ServiceLayout>

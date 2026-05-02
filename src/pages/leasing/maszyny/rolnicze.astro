@@ -1,0 +1,89 @@
+---
+import ServiceLayout from '../../../layouts/ServiceLayout.astro';
+
+const faq = [
+  { question: "Czy rolnik na ryczałcie może wziąć leasing?", answer: "Tak, choć podatkowo mniej korzystnie niż przy zasadach ogólnych — rata nie odlicza się jako koszt (bo ryczałt opodatkowuje przychód). Mimo to leasing maszyny rolniczej może mieć sens ze względu na niski wkład własny i rozłożenie wydatku w czasie. Szczegóły: [leasing na ryczałcie](/blog/leasing-na-ryczalcie/)." },
+  { question: "Jaki wkład własny przy leasingu ciągnika?", answer: "Nowy ciągnik renomowanej marki (John Deere, New Holland, Case IH, Fendt, Massey Ferguson) — 0-10%. Używany do 5 lat — 10-15%. Powyżej 10 lat — 20-30% lub odmowa. Maszyny mniej znane (chińskie, indyjskie) — wkład wyższy o 5-10 pp." },
+  { question: "Czy leasing łączy się z dotacjami z ARiMR?", answer: "Tak — bardzo popularna kombinacja. Środki z PROW / WPR (np. modernizacja gospodarstw, młody rolnik) można przeznaczyć na wkład własny w leasingu. Pozwala to wziąć droższą maszynę przy mniejszym kapitale własnym. Wymaga uważnego rozliczenia — skonsultuj z doradcą rolnym." },
+  { question: "Leasing zwrotny ciągnika — co to?", answer: "Sprzedajesz swój ciągnik firmie leasingowej i bierzesz go z powrotem w leasing. Otrzymujesz gotówkę (na obrotówkę, paliwo, nawozy), a maszyna nadal pracuje w gospodarstwie. Wkład 0%, rata wpisuje się w koszty (przy ogólnych zasadach). Więcej: [leasing zwrotny](/leasing/zwrotny/)." },
+  { question: "Czy gospodarstwo rolne to firma w rozumieniu leasingu?", answer: "Standardowo tak — większość firm leasingowych traktuje rolników (działalność rolnicza, agroturystyka, działy specjalne produkcji rolnej) jak małe firmy. Wymagane są: wpis do ewidencji producentów ARiMR, KRUS lub ZUS, PIT-y / dowody przychodu, czasem księga przychodów." }
+];
+---
+
+<ServiceLayout
+  title="Leasing Maszyn Rolniczych 2026 — Ciągniki, Kombajny, Siewniki | Ośmiorniczka"
+  description="Leasing maszyn rolniczych dla gospodarstw: ciągniki, kombajny, siewniki, opryskiwacze, prasy do bel. Łączymy z dotacjami ARiMR. Decyzja w 48-72h."
+  h1="Leasing maszyn rolniczych — ciągniki, kombajny, siewniki"
+  subtitle="Finansowanie sprzętu rolniczego nowego i używanego. Łączymy z dotacjami z ARiMR i PROW. Decyzja zwykle w 48-72h."
+  breadcrumbParent={{ name: "Maszyny", url: "/leasing/maszyny/" }}
+  heroImage="/leasing-maszyny-hero.webp"
+  breadcrumbCurrent="Maszyny rolnicze"
+  faq={faq}
+>
+  <h2>Jakie maszyny rolnicze finansujemy?</h2>
+  <ul>
+    <li><strong>Ciągniki</strong> — John Deere, New Holland, Case IH, Fendt, Massey Ferguson, Deutz-Fahr, Zetor, Ursus</li>
+    <li><strong>Kombajny zbożowe</strong> — sieczkarnie, sieczkarnie samobieżne, kombajny do kukurydzy</li>
+    <li><strong>Siewniki</strong> — punktowe, mechaniczne, pneumatyczne, do zbóż i kukurydzy</li>
+    <li><strong>Opryskiwacze</strong> — polowe zawieszane, ciągnikowe, samobieżne</li>
+    <li><strong>Prasy</strong> — do balotów okrągłych, kostek, owijarki</li>
+    <li><strong>Pługi, agregaty uprawowe, brony</strong> — kompletne zestawy uprawowe</li>
+    <li><strong>Ładowacze, wozy paszowe, mieszalniki</strong> — sprzęt obsługowy w gospodarstwie</li>
+    <li><strong>Sprzęt specjalistyczny</strong> — opryskiwacze sadownicze, kombajny do owoców i warzyw, kosiarki rotacyjne</li>
+  </ul>
+
+  <h3>Typowe warunki leasingu maszyn rolniczych</h3>
+  <table>
+    <thead>
+      <tr><th>Maszyna</th><th>Wkład własny</th><th>Okres</th><th>Uwagi</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Ciągnik nowy (renomowana marka)</td><td>0-10%</td><td>48-84 mies.</td><td>Często promocje producenta na 0%</td></tr>
+      <tr><td>Ciągnik używany do 5 lat</td><td>10-15%</td><td>36-72 mies.</td><td>Wymagana opinia serwisanta</td></tr>
+      <tr><td>Kombajn zbożowy nowy</td><td>10-20%</td><td>60-84 mies.</td><td>Przy bardzo wysokiej wartości — indywidualna decyzja</td></tr>
+      <tr><td>Sprzęt towarzyszący (siewniki, prasy)</td><td>0-10%</td><td>36-60 mies.</td><td>Często w pakiecie z ciągnikiem</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Przykład: ciągnik 150 KM, 4WD</h3>
+  <p>Założenia: nowy ciągnik 150 KM klasy średniej, wartość 380 000 zł netto, wkład 10%, okres 72 miesiące, wykup 1%, oprocentowanie ~8%.</p>
+  <table>
+    <thead>
+      <tr><th>Element</th><th>Kwota</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Wartość netto</td><td>380 000 zł</td></tr>
+      <tr><td>Wkład własny (10%)</td><td>38 000 zł</td></tr>
+      <tr><td>Rata miesięczna netto</td><td>~5 950 zł</td></tr>
+      <tr><td>Wykup (1%)</td><td>3 800 zł</td></tr>
+      <tr><td><strong>Łączny koszt netto</strong></td><td><strong>~470 200 zł</strong></td></tr>
+    </tbody>
+  </table>
+  <p class="text-sm text-slate-500"><em>Wartość orientacyjna. Producenci ciągników (John Deere, New Holland, Case IH) często oferują własne promocje — leasing 0%, niższe oprocentowanie sezonowe. Po dokładną kalkulację: <a href="/kontakt/">napisz do nas</a>.</em></p>
+
+  <h3>Łączenie z dotacjami ARiMR / PROW</h3>
+  <p>To jeden z najczęstszych modeli finansowania w polskim rolnictwie:</p>
+  <ul>
+    <li><strong>Modernizacja gospodarstw rolnych</strong> — refundacja do 60% kosztów (młody rolnik, ONW, obszary OSN — wyższe stawki)</li>
+    <li><strong>Premia dla młodych rolników</strong> — 200 tys. zł — może pokryć wkład własny w leasingu na cały park maszynowy</li>
+    <li><strong>Restrukturyzacja małych gospodarstw</strong> — 60 tys. zł na inwestycje produkcyjne</li>
+    <li>Dotacja pokrywa wkład własny → leasingiem finansujesz pozostałą część → wszystko bez angażowania własnej gotówki</li>
+  </ul>
+  <p>Aktualne programy: <a href="/blog/dotacje-dla-firm-2026/">Dotacje dla firm 2026</a> (sekcja rolnictwo).</p>
+
+  <h3>Sezonowość rat</h3>
+  <p>Wiele firm leasingowych dla rolnictwa oferuje <strong>raty sezonowe</strong> dopasowane do cyklu produkcji rolniczej:</p>
+  <ul>
+    <li>Wyższe raty w miesiącach po zbiorach (lipiec-listopad)</li>
+    <li>Niższe raty w okresie zimowo-wiosennym</li>
+    <li>Możliwe też karencje przy zakupie kombajnu (pierwsze raty po pierwszych zbiorach)</li>
+  </ul>
+
+  <h3>Dla kogo</h3>
+  <ul>
+    <li>Gospodarstwa <strong>towarowe</strong> — modernizacja parku maszynowego, wymiana ciągnika lub kombajnu</li>
+    <li><strong>Młodzi rolnicy</strong> — kombinacja premii ARiMR + leasingu pozwala wystartować z nowoczesnym sprzętem</li>
+    <li>Gospodarstwa <strong>specjalistyczne</strong> (sadownicze, ogrodnicze, hodowlane) — sprzęt dedykowany pod uprawy</li>
+    <li>Firmy <strong>usługowo-rolnicze</strong> (oranie, koszenie, młocka na zlecenie) — leasing operacyjny + faktury usługowe</li>
+  </ul>
+</ServiceLayout>

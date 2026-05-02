@@ -1,0 +1,80 @@
+---
+import ServiceLayout from '../../../layouts/ServiceLayout.astro';
+
+const faq = [
+  { question: "Jakie obrabiarki CNC można leasingować?", answer: "Tokarki CNC, frezarki, centra obróbcze pionowe i poziome, plazma CNC, lasery włókonowe i CO2, prasy krawędziowe, gilotyny, wycinarki. Również linie produkcyjne i roboty przemysłowe." },
+  { question: "Jaki minimalny obrót firmy do leasingu obrabiarki?", answer: "Dla nowych obrabiarek o wartości do 500 tys. zł — bez sztywnego limitu obrotów, decyduje rentowność. Powyżej 1 mln zł zwykle wymagany obrót min. 2-3 mln rocznie i 12+ miesięcy działalności." },
+  { question: "Czy mogę leasingować używaną tokarkę CNC?", answer: "Tak. Standard rynkowy: nie starsza niż 10-15 lat na koniec umowy. Wymagane: opinia serwisanta o stanie elektroniki i mechaniki, dokumentacja przeglądów, certyfikat oryginalności (jeśli renomowana marka)." },
+  { question: "Czy leasing pokrywa transport, instalację i szkolenie?", answer: "Tak — większość firm leasingowych pozwala wliczyć w umowę dodatkowe koszty: transport, instalację, uruchomienie, szkolenie operatorów, oprogramowanie CAM. Cała kwota leasingu = koszt podatkowy." },
+  { question: "Czy leasing CNC łączy się z dotacją?", answer: "Tak — to bardzo popularne. Środki z dotacji (np. PARP, FE dla Nowoczesnej Gospodarki, lokalne RPO) można przeznaczyć na wkład własny w leasingu. Pozwala to wziąć droższą maszynę przy mniejszym zaangażowaniu kapitału." }
+];
+---
+
+<ServiceLayout
+  title="Leasing Obrabiarek CNC 2026 — Tokarki, Frezarki, Lasery | Ośmiorniczka"
+  description="Leasing obrabiarek CNC i maszyn produkcyjnych dla firm. Tokarki, frezarki, plazma, lasery, prasy. Od 0% wkładu, 100% VAT, decyzja w 24-48h."
+  h1="Leasing obrabiarek CNC i maszyn produkcyjnych"
+  subtitle="Tokarki CNC, frezarki, centra obróbcze, lasery, plazma, prasy. Nowe i używane, z opcją wliczenia transportu i instalacji w ratę."
+  breadcrumbParent={{ name: "Maszyny", url: "/leasing/maszyny/" }}
+  heroImage="/leasing-maszyny-hero.webp"
+  breadcrumbCurrent="Obrabiarki CNC"
+  faq={faq}
+>
+  <h2>Co finansujemy w obrabiarkach i maszynach produkcyjnych?</h2>
+  <ul>
+    <li><strong>Obrabiarki CNC</strong> — tokarki dwu- i trzyosiowe, frezarki, centra obróbcze 4 i 5-osiowe</li>
+    <li><strong>Wycinarki</strong> — laserowe (włókonowe, CO2), plazmowe, wodne</li>
+    <li><strong>Prasy</strong> — krawędziowe, mimośrodowe, hydrauliczne, gilotyny</li>
+    <li><strong>Maszyny do obróbki blachy</strong> — wykrawarki, walcarki, profilarki</li>
+    <li><strong>Maszyny stolarskie</strong> — formatyzerki, okleiniarki, CNC do drewna</li>
+    <li><strong>Roboty przemysłowe</strong> — spawalnicze, paletyzujące, do obsługi obrabiarek</li>
+    <li><strong>Linie produkcyjne</strong> — kompletne ciągi technologiczne pod konkretną branżę</li>
+  </ul>
+
+  <h3>Typowe parametry leasingu obrabiarki CNC</h3>
+  <table>
+    <thead>
+      <tr><th>Wartość maszyny netto</th><th>Wkład własny</th><th>Okres</th><th>Czas decyzji</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>do 200 tys. zł</td><td>0-10%</td><td>36-60 mies.</td><td>24-48h</td></tr>
+      <tr><td>200-500 tys. zł</td><td>5-15%</td><td>48-72 mies.</td><td>2-5 dni</td></tr>
+      <tr><td>500 tys. — 2 mln zł</td><td>10-20%</td><td>60-84 mies.</td><td>5-10 dni</td></tr>
+      <tr><td>powyżej 2 mln zł</td><td>15-25%</td><td>indywidualnie</td><td>2-4 tyg.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Przykład: tokarka CNC za 350 000 zł</h3>
+  <p>Założenia: nowa tokarka, wartość 350 000 zł netto + 25 000 zł transport i instalacja = 375 000 zł, wkład 10%, okres 60 miesięcy, wykup 1%, oprocentowanie ~8%.</p>
+  <table>
+    <thead>
+      <tr><th>Element</th><th>Kwota</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Wartość finansowania</td><td>375 000 zł</td></tr>
+      <tr><td>Wkład własny (10%)</td><td>37 500 zł</td></tr>
+      <tr><td>Rata miesięczna netto</td><td>~6 750 zł</td></tr>
+      <tr><td>Wykup (1%)</td><td>3 750 zł</td></tr>
+      <tr><td><strong>Łączny koszt netto</strong></td><td><strong>~446 000 zł</strong></td></tr>
+    </tbody>
+  </table>
+  <p class="text-sm text-slate-500"><em>Wartość finansowania obejmuje cenę maszyny + transport, instalację i szkolenie — wszystko jako koszt podatkowy. Po dokładną ofertę pod konkretny model: <a href="/kontakt/">napisz do nas</a>.</em></p>
+
+  <h3>Połączenie z dotacją na maszyny</h3>
+  <p>Jeśli składasz wniosek o dotację na zakup maszyn (np. PARP, FE dla Nowoczesnej Gospodarki, regionalne RPO), leasing operacyjny często bywa wymaganą lub preferowaną formą finansowania:</p>
+  <ul>
+    <li>Dotacja pokrywa <strong>30-70% wartości</strong> maszyny w zależności od programu i regionu</li>
+    <li>Wkład własny w leasingu można pokryć ze środków własnych lub dotacji</li>
+    <li>VAT odliczasz w pełni od każdej raty (jak przy zwykłym leasingu)</li>
+    <li>Pozwala to <strong>wziąć większą maszynę</strong> niż mógłbyś sfinansować sam</li>
+  </ul>
+  <p>Więcej w artykule: <a href="/blog/dotacje-dla-firm-2026/">Dotacje dla firm 2026 — jak łączyć z leasingiem</a>.</p>
+
+  <h3>Dla kogo szczególnie się sprawdza</h3>
+  <ul>
+    <li>Firmy <strong>obróbki metalu</strong> — zakłady tokarsko-frezarskie, narzędziownie</li>
+    <li>Firmy <strong>obróbki blachy i metalokonstrukcje</strong> — lasery, plazma, prasy</li>
+    <li>Firmy <strong>stolarskie</strong> — CNC do drewna, formatyzerki</li>
+    <li>Firmy chcące <strong>zautomatyzować produkcję</strong> robotami przemysłowymi</li>
+  </ul>
+</ServiceLayout>

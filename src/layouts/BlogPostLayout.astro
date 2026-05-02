@@ -16,7 +16,10 @@ interface Props {
 }
 
 const { frontmatter } = Astro.props;
-const { title, description, date, updated, author = 'Ośmiorniczka', category, tags = [], readingTime = '5 min' } = frontmatter;
+const { title, description, date, updated, author = 'Paulina Wysoczańska', category, tags = [], readingTime = '5 min' } = frontmatter;
+
+const dateFormatted = new Date(date).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' });
+const updatedFormatted = updated ? new Date(updated).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' }) : null;
 
 const categoryMap: Record<string, { label: string; url: string }> = {
   leasing: { label: 'Leasing', url: '/blog/' },
@@ -58,6 +61,22 @@ const cat = categoryMap[category] || { label: category, url: '/blog/' };
         </div>
         <h1 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-slate-900 mb-4 leading-tight">{title}</h1>
         <p class="text-lg text-slate-500 mb-6">{description}</p>
+
+        <div class="flex items-center gap-4 pt-4 border-t border-slate-100">
+          <img src="/paulina-480.webp" alt="Paulina Wysoczańska — doradca finansowy" width="48" height="48" class="w-12 h-12 rounded-full object-cover flex-shrink-0" loading="lazy" />
+          <div class="text-sm leading-tight">
+            <div class="text-slate-800 font-medium">
+              {author === 'Paulina Wysoczańska' ? (
+                <a href="/o-mnie/" class="hover:text-teal-600 transition-colors">Paulina Wysoczańska</a>
+              ) : author}
+            </div>
+            <div class="text-slate-500">
+              Doradca finansowy · Wrocław ·
+              <time datetime={date}> {dateFormatted}</time>
+              {updatedFormatted && <span> · Aktualizacja: <time datetime={updated}>{updatedFormatted}</time></span>}
+            </div>
+          </div>
+        </div>
       </header>
 
       <!-- Article content -->
@@ -100,8 +119,21 @@ const cat = categoryMap[category] || { label: category, url: '/blog/' };
     "datePublished": date,
     "dateModified": updated || date,
     "author": {
-      "@type": "Organization",
-      "name": "Ośmiorniczka.pl"
+      "@type": "Person",
+      "name": author,
+      "jobTitle": "Doradca finansowy / Broker leasingowy",
+      "url": "https://leasingpoprostu.pl/o-mnie/",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Enigma Pośrednictwo-Prawno-Finansowe Paulina Wysoczańska",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Stanisławowska 47",
+          "addressLocality": "Wrocław",
+          "postalCode": "54-611",
+          "addressCountry": "PL"
+        }
+      }
     },
     "publisher": {
       "@type": "Organization",

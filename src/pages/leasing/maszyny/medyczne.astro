@@ -1,0 +1,99 @@
+---
+import ServiceLayout from '../../../layouts/ServiceLayout.astro';
+
+const faq = [
+  { question: "Czy mogę leasingować unit stomatologiczny?", answer: "Tak, to jeden z najczęściej leasingowanych sprzętów medycznych w Polsce. Nowe unity od uznanych producentów (Sirona, Planmeca, KaVo, Anthos, Castellini) — wkład 0-10%, okres do 7 lat. Można w pakiecie z dodatkowym sprzętem (kompresor, ssak, RTG punktowy)." },
+  { question: "Jakie warunki leasingu dla świeżo otwartego gabinetu?", answer: "Leasing dostępny od pierwszego dnia działalności, ale z wyższym wkładem (15-25%) i często z poręczeniem osobistym. Lekarz/dentysta z dyplomem i prawem wykonywania zawodu jest dla firm leasingowych dobrym kredytobiorcą — staż w zawodzie liczy się jak doświadczenie firmy." },
+  { question: "Czy można leasingować używany sprzęt medyczny?", answer: "Tak, choć z większymi wymaganiami: opinia serwisanta o stanie technicznym, certyfikat sprawności (zwłaszcza dla aparatów RTG, USG), dokumentacja kalibracji. Maksymalny wiek — typowo 7-10 lat na koniec umowy." },
+  { question: "Co z aparatem RTG i pozwoleniami radiologicznymi?", answer: "Leasing nie zwalnia z obowiązków regulacyjnych (zgoda Sanepid, dozymetria, szkolenia). Ale faktura leasingowa i protokół odbioru są wystarczającymi dokumentami do zgłoszenia urządzenia. Wiele firm leasingowych ma doświadczenie z gabinetami stomatologicznymi i podpowie w procedurach." },
+  { question: "Leasing czy zakup gabinetu — co lepsze podatkowo?", answer: "Dla większości gabinetów na zasadach ogólnych lub liniowo — leasing wygrywa. Cała rata to koszt, brak limitu jak przy autach, 100% VAT do odliczenia. Dla ryczałtowców zależy od stawki — zob. artykuł o [leasingu na ryczałcie](/blog/leasing-na-ryczalcie/)." }
+];
+---
+
+<ServiceLayout
+  title="Leasing Sprzętu Medycznego 2026 — Unit, USG, RTG, Tomograf | Ośmiorniczka"
+  description="Leasing sprzętu medycznego: unity stomatologiczne, USG, RTG, tomografy, sterylizatory. Dla gabinetów lekarskich i dentystycznych — od 0% wkładu, decyzja w 48h."
+  h1="Leasing sprzętu medycznego i stomatologicznego"
+  subtitle="Unity stomatologiczne, USG, RTG, tomografy, sterylizatory, lampy bezcieniowe. Dla gabinetów lekarskich, dentystycznych, weterynaryjnych."
+  breadcrumbParent={{ name: "Maszyny", url: "/leasing/maszyny/" }}
+  heroImage="/leasing-maszyny-hero.webp"
+  breadcrumbCurrent="Sprzęt medyczny"
+  faq={faq}
+>
+  <h2>Co finansujemy w sprzęcie medycznym?</h2>
+
+  <h3>Stomatologia</h3>
+  <ul>
+    <li><strong>Unity stomatologiczne</strong> — Sirona, Planmeca, KaVo, Anthos, Castellini, Adec</li>
+    <li><strong>RTG punktowe i pantomograficzne</strong> — Carestream, Soredex, Vatech</li>
+    <li><strong>Skanery wewnątrzustne</strong> — 3Shape Trios, iTero, Medit</li>
+    <li><strong>Sterylizatory autoklawowe</strong>, myjki ultradźwiękowe</li>
+    <li><strong>Lampy zabiegowe</strong>, kompresory, ssaki, separatory amalgamatu</li>
+    <li><strong>Frezarki dentystyczne</strong> i piece do spiekania (CAD/CAM gabinetowy)</li>
+  </ul>
+
+  <h3>Diagnostyka obrazowa</h3>
+  <ul>
+    <li><strong>Aparaty USG</strong> — GE, Mindray, Samsung, Philips, Esaote</li>
+    <li><strong>RTG</strong> — punktowe, panoramiczne, kostne, mammograficzne</li>
+    <li><strong>Tomografy CBCT</strong> — dla stomatologii i chirurgii</li>
+    <li><strong>Densytometry</strong>, kardiomonitory, EKG, holtery</li>
+  </ul>
+
+  <h3>Wyposażenie gabinetu / kliniki</h3>
+  <ul>
+    <li><strong>Stoły operacyjne i zabiegowe</strong></li>
+    <li><strong>Lampy bezcieniowe</strong></li>
+    <li><strong>Aparatura anestezjologiczna</strong></li>
+    <li><strong>Mikroskopy zabiegowe</strong> — Zeiss, Leica</li>
+    <li><strong>Lasery medyczne</strong> i kosmetologiczne</li>
+  </ul>
+
+  <h3>Typowe warunki leasingu sprzętu medycznego</h3>
+  <table>
+    <thead>
+      <tr><th>Sytuacja</th><th>Wkład własny</th><th>Okres</th><th>Uwagi</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Działający gabinet, 12+ mies.</td><td>0-10%</td><td>do 84 mies.</td><td>Najszerszy wybór ofert</td></tr>
+      <tr><td>Świeżo otwarty gabinet (dyplom + PWZ)</td><td>10-20%</td><td>do 60 mies.</td><td>Często z poręczeniem osobistym</td></tr>
+      <tr><td>Sprzęt używany do 5 lat</td><td>10-15%</td><td>do 60 mies.</td><td>Wymagana opinia serwisanta</td></tr>
+      <tr><td>Sprzęt z USA / Azji (import)</td><td>15-25%</td><td>do 48 mies.</td><td>Sprawdź serwis i części w PL</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Przykład: unit stomatologiczny premium</h3>
+  <p>Założenia: nowy unit Sirona/KaVo, wartość 180 000 zł netto + RTG punktowe 35 000 zł + sterylizator 15 000 zł = 230 000 zł pakiet, wkład 10%, okres 72 miesiące, wykup 1%, oprocentowanie ~8%.</p>
+  <table>
+    <thead>
+      <tr><th>Element</th><th>Kwota</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Wartość pakietu</td><td>230 000 zł</td></tr>
+      <tr><td>Wkład własny (10%)</td><td>23 000 zł</td></tr>
+      <tr><td>Rata miesięczna netto</td><td>~3 600 zł</td></tr>
+      <tr><td>Wykup (1%)</td><td>2 300 zł</td></tr>
+      <tr><td><strong>Łączny koszt netto</strong></td><td><strong>~284 500 zł</strong></td></tr>
+    </tbody>
+  </table>
+  <p class="text-sm text-slate-500"><em>Cała rata 3 600 zł to koszt podatkowy. Cały VAT 23% odliczasz od każdej raty. Po ofertę pod konkretny model i pakiet: <a href="/kontakt/">napisz do nas</a>.</em></p>
+
+  <h3>Świeżo otwarty gabinet — co dalej</h3>
+  <p>Leasing wyposażenia gabinetu od pierwszego dnia działalności jest jak najbardziej możliwy. Co potrzeba:</p>
+  <ul>
+    <li>Wpis CEIDG / KRS (gabinet jako działalność gospodarcza lub spółka)</li>
+    <li>Dyplom + prawo wykonywania zawodu (lekarz / dentysta / weterynarz)</li>
+    <li>Plan finansowy / prognoza przychodów (czasem wystarczy umowa najmu lokalu + planowana liczba pacjentów)</li>
+    <li>Wkład własny 10-25% — można pokryć z dotacji "Pierwszy biznes" lub kredytu na start</li>
+  </ul>
+  <p>Więcej w artykule: <a href="/blog/leasing-dla-nowej-firmy/">Leasing dla nowej firmy — warunki i porady</a>.</p>
+
+  <h3>Dla kogo</h3>
+  <ul>
+    <li><strong>Gabinety stomatologiczne</strong> — od pojedynczego unitu po kompletne wyposażenie nowo otwartej kliniki</li>
+    <li><strong>Lekarze specjaliści</strong> otwierający prywatną praktykę (USG, EKG, sprzęt diagnostyczny)</li>
+    <li><strong>Gabinety weterynaryjne</strong> — stoły zabiegowe, RTG, USG, sterylizatory</li>
+    <li><strong>Kosmetologia i medycyna estetyczna</strong> — lasery, ultradźwięki, RF</li>
+    <li><strong>Fizjoterapia</strong> — aparaty do elektroterapii, ultradźwięków, laser</li>
+  </ul>
+</ServiceLayout>

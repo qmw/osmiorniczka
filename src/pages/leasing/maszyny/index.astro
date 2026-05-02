@@ -1,0 +1,89 @@
+---
+import ServiceLayout from '../../../layouts/ServiceLayout.astro';
+
+const verticals = [
+  {
+    href: '/leasing/maszyny/budowlane/',
+    title: 'Maszyny budowlane',
+    desc: 'Koparki, ładowarki, dźwigi, betoniarki, agregaty. Finansujemy nowe i używane.',
+    examples: 'koparki · ładowarki · dźwigi · walce · betoniarki',
+  },
+  {
+    href: '/leasing/maszyny/cnc/',
+    title: 'Obrabiarki CNC i maszyny produkcyjne',
+    desc: 'Tokarki, frezarki, centra obróbcze, plazma, lasery, prasy. Również linie produkcyjne i roboty.',
+    examples: 'tokarki · frezarki · plazma · lasery · prasy',
+  },
+  {
+    href: '/leasing/maszyny/medyczne/',
+    title: 'Sprzęt medyczny i stomatologiczny',
+    desc: 'Unity stomatologiczne, USG, RTG, tomografy, stoły operacyjne, sterylizatory.',
+    examples: 'unity stom. · USG · RTG · tomografy · sterylizatory',
+  },
+  {
+    href: '/leasing/maszyny/rolnicze/',
+    title: 'Maszyny rolnicze',
+    desc: 'Ciągniki, kombajny, siewniki, opryskiwacze, prasy do bel, ładowacze.',
+    examples: 'ciągniki · kombajny · siewniki · opryskiwacze',
+  },
+];
+
+const faq = [
+  { question: "Jakie maszyny można leasingować?", answer: "Praktycznie każde — CNC, budowlane (koparki, ładowarki), rolnicze (traktory, kombajny), produkcyjne, medyczne, poligraficzne. Każdy środek trwały o wartości powyżej kilku tysięcy złotych." },
+  { question: "Czy mogę leasingować używane maszyny?", answer: "Tak, wiele firm leasingowych finansuje używane maszyny. Kluczowe jest udokumentowanie stanu technicznego i wartości rynkowej (wycena rzeczoznawcy)." },
+  { question: "Jaki jest minimalny wkład własny?", answer: "Od 0% do 20% w zależności od rodzaju maszyny, jej wieku i kondycji finansowej Twojej firmy. Nowe maszyny od uznanych producentów — nawet 0%." },
+  { question: "Czy mogę odliczyć 100% VAT od leasingu maszyn?", answer: "Tak — w przeciwieństwie do samochodów osobowych, przy maszynach odliczasz 100% VAT od każdej raty leasingowej. Cała rata netto jest kosztem uzyskania przychodu." },
+  { question: "Leasing maszyn czy kredyt inwestycyjny — co lepsze?", answer: "Dla większości firm leasing — szybsza decyzja (24-48h vs 2-4 tyg.), niższy wkład, cała rata to koszt podatkowy. Kredyt inwestycyjny ma sens głównie przy bardzo długich okresach (7+ lat) lub gdy chcesz mieć maszynę w aktywach od razu." }
+];
+---
+
+<ServiceLayout
+  title="Leasing Maszyn i Urządzeń 2026 — Budowlane, CNC, Medyczne, Rolnicze | Ośmiorniczka"
+  description="Leasing maszyn dla firm: budowlane, CNC, medyczne, rolnicze. Od 0% wkładu, 100% VAT do odliczenia, decyzja w 24-48h. Bezpłatna konsultacja."
+  h1="Leasing maszyn i urządzeń — najlepsze oferty 2026"
+  subtitle="Finansujemy każdy rodzaj maszyn dla firm. Wybierz swoją branżę i zobacz konkretne warunki."
+  breadcrumbParent={{ name: "Leasing", url: "/leasing/" }}
+  heroImage="/leasing-maszyny-hero.webp"
+  breadcrumbCurrent="Maszyny i urządzenia"
+  faq={faq}
+>
+  <h2>Wybierz typ maszyn</h2>
+  <p>Każda branża ma swoje warunki: inny wkład własny, inny okres umowy, inne wymagania dotyczące używanego sprzętu. Wybierz typ maszyn, którymi się interesujesz, żeby zobaczyć konkretne parametry i typowe oferty.</p>
+
+  <div class="not-prose grid sm:grid-cols-2 gap-4 my-8">
+    {verticals.map(v => (
+      <a href={v.href} class="card hover:shadow-lg hover:border-teal-300 transition-all group block">
+        <h3 class="font-heading font-semibold text-lg text-slate-900 group-hover:text-teal-600 mb-2">{v.title}</h3>
+        <p class="text-slate-600 text-sm mb-3">{v.desc}</p>
+        <p class="text-xs text-slate-400">{v.examples}</p>
+      </a>
+    ))}
+  </div>
+
+  <h2>Leasing maszyn — dlaczego się opłaca?</h2>
+  <p>Leasing maszyn i urządzeń to jeden z najkorzystniejszych sposobów finansowania inwestycji w środki trwałe. W przeciwieństwie do samochodów osobowych, <strong>nie ma limitu wartości</strong> — cała rata netto jest kosztem i odliczasz <strong>100% VAT</strong>.</p>
+
+  <h3>Korzyści leasingu maszyn vs kredyt</h3>
+  <table>
+    <thead>
+      <tr><th>Aspekt</th><th>Leasing</th><th>Kredyt</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>VAT</td><td>Rozłożony na raty</td><td>Cały z góry</td></tr>
+      <tr><td>Bilans</td><td>Pozabilansowy (operacyjny)</td><td>Wchodzi w zadłużenie</td></tr>
+      <tr><td>Koszty</td><td>Cała rata = koszt</td><td>Tylko odsetki = koszt</td></tr>
+      <tr><td>Wkład własny</td><td>Od 0%</td><td>Zwykle 20%+</td></tr>
+      <tr><td>Szybkość decyzji</td><td>24-48h</td><td>2-4 tygodnie</td></tr>
+    </tbody>
+  </table>
+  <p>Pełne porównanie z liczbami: <a href="/blog/kredyt-inwestycyjny-czy-leasing-maszyn/">Kredyt inwestycyjny czy leasing maszyn — co wybrać</a>.</p>
+
+  <h3>Leasing maszyn używanych</h3>
+  <p>Finansujemy również używane maszyny. Wymagania to zazwyczaj:</p>
+  <ul>
+    <li>Wycena rzeczoznawcy lub faktura od sprzedawcy</li>
+    <li>Maszyna nie starsza niż 10-15 lat na koniec umowy</li>
+    <li>Sprawność techniczna potwierdzona przeglądem</li>
+    <li>Wkład własny 10-20% (wyższy niż dla nowych)</li>
+  </ul>
+</ServiceLayout>
