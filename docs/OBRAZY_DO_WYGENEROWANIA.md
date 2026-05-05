@@ -107,3 +107,41 @@ Styl jak wcześniej: flat illustration, kawaii vibes, **cobalt #0047AB + coral #
   > Flat-illustrated comparison scale / balance: on the left side a stack of cobalt coins labeled by shape only (no text); on the right side a small simplified machine icon. Cute octopus mascot perched on top of the balance pivot. Soft cream background, cobalt and coral accents. Kawaii flat illustration, no text on image, 16:9.
 
 **Uwaga:** strony wertykalne mają fallback na `leasing-maszyny-hero.webp` — jeśli któryś hero zostanie nie wygenerowany, strona dalej działa, tylko z generycznym obrazkiem.
+
+---
+
+## DO WYGENEROWANIA — batch z 2026-05-05 (4 nowe artykuły z pytań klientów)
+
+Styl jak wcześniej: flat illustration, kawaii vibes, **cobalt #0047AB + coral #FF8B6A**, soft pastel background, no text on image, 16:9. Reference image: `public/logo.svg` lub `public/osmiorniczka_bg.png`.
+
+### Artykuł: Leasing auta z Niemiec (do `public/blog/`)
+
+- [ ] `leasing-auta-z-niemiec.webp`
+  > Cute pink cartoon octopus character (kawaii style) standing happily next to a small flat-illustrated grey sedan, parked between a German road sign on the left and a Polish road sign on the right. One tentacle holds a stylised "VAT 23%" paper stamp, another tentacle waves friendly. Detective/inspector vibe. Soft pastel cobalt sky in the background, coral accents on the road signs. Flat illustration, kawaii vibes, big friendly eyes, rosy cheeks, no text on image, 16:9.
+
+- [ ] `leasing-auta-z-niemiec-dokumenty.webp`
+  > Cute pink cartoon octopus character (kawaii style) as a friendly inspector, holding a magnifying glass in one tentacle and pointing with another at a neat flat-lay of document icons: a stylised vehicle title, a stamped invoice, a translator seal, and a tiny key on a tag. Light cream background, cobalt-coral accents on the stamps. Detective/explainer vibe. Flat illustration, kawaii vibes, big friendly eyes, rosy cheeks, no text on image, 16:9.
+
+### Artykuł: Pożyczka leasingowa vs leasing (do `public/blog/`)
+
+- [ ] `pozyczka-leasingowa-vs-leasing.webp`
+  > Cute pink cartoon octopus character (kawaii style) standing thoughtfully at a fork in the road. One tentacle points to the left path, where a small flat-illustrated car sits with a coral "OWNER" tag and a key icon above it. Another tentacle points to the right path, where the same car sits under a soft cobalt umbrella shape (representing leasing protection). Thoughtful, comparing expression. Soft pastel background, kawaii flat illustration, big friendly eyes, rosy cheeks, no text on image, 16:9.
+
+- [ ] `pozyczka-leasingowa-vs-leasing-tabela.webp`
+  > Cute pink cartoon octopus character (kawaii style) holding a flat-illustrated balance scale in two tentacles. On the left pan: a key icon (representing ownership / loan). On the right pan: a small contract scroll with a cobalt seal (representing operating lease). Thoughtful, teacher/explainer vibe. Soft cream background, cobalt and coral accents on the scale. Flat illustration, kawaii vibes, big friendly eyes, rosy cheeks, no text on image, 16:9.
+
+### Artykuł: Wakacje leasingowe (do `public/blog/`)
+
+- [ ] `wakacje-leasingowe-zawieszenie-rat.webp`
+  > Cute pink cartoon octopus character (kawaii style) sitting relaxed on a tiny construction site bench, holding a coffee mug in one tentacle and a desk calendar in another. Three calendar pages are gently dog-eared with soft cobalt pause-symbol overlays. A tiny construction helmet and a small toy excavator nearby. Calm and reassuring expression. Soft pastel background. Flat illustration, kawaii vibes, big friendly eyes, rosy cheeks, no text on image, 16:9.
+
+- [ ] `wakacje-leasingowe-zawieszenie-rat-formy.webp`
+  > Cute pink cartoon octopus character (kawaii style) as a friendly teacher pointing tentacle at three flat-illustrated horizontal timeline bars stacked vertically. The bars show three patterns of pause-and-resume markers (cobalt dots shifted differently in each bar). Coral accent dot highlights the third bar. Teacher/explainer vibe. Light cream background, kawaii flat illustration, big friendly eyes, rosy cheeks, no text on image, 16:9.
+
+### Artykuł: Raty stałe czy zmienne 2026 (do `public/blog/`)
+
+- [ ] `raty-stale-czy-zmienne-2026.webp`
+  > Cute pink cartoon octopus character (kawaii style) holding a flat-illustrated balance scale. On the left pan: a stable cobalt rectangular block with a tiny lock icon (representing fixed rate). On the right pan: a stack of varying-height blocks with a gentle wavy line above (representing variable rate). The scale is balanced but slightly tilting. Thoughtful, comparing expression. Soft pastel background, cobalt-coral palette. Flat illustration, kawaii vibes, big friendly eyes, rosy cheeks, no text on image, 16:9.
+
+- [ ] `raty-stale-czy-zmienne-2026-wibor.webp`
+  > Cute pink cartoon octopus character (kawaii style) as a friendly detective, holding a magnifying glass in one tentacle and pointing with another at a clean flat-illustrated line chart. The chart line is cobalt blue, peaking high on the left and gently descending to the right, with a single coral dot marking the current position. Year tick marks at the bottom (no readable text). Detective/inspector vibe. Light cream background, kawaii flat illustration, big friendly eyes, rosy cheeks, no text on image, 16:9.
