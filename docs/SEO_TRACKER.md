@@ -34,6 +34,10 @@ Pozycje z GSC 2026-05-02 (ostatnie 3 miesiące, Polska only). "—" = brak wyśw
 | 22 | [Leasing na ryczałcie](/blog/leasing-na-ryczalcie/) | leasing na ryczałcie | NISKA | — |  |
 | 23 | [Co zrobić gdy odmówiono leasingu](/blog/co-zrobic-gdy-firma-leasingowa-odmowila/) | odmowa leasingu co dalej | NISKA | — |  |
 | 24 | [Kredyt inwestycyjny czy leasing maszyn](/blog/kredyt-inwestycyjny-czy-leasing-maszyn/) | kredyt inwestycyjny czy leasing maszyn | NISKA | NEW (był pos 19.9 bez artykułu) | dodano 2026-05-02 |
+| 25 | [Leasing auta z Niemiec](/blog/leasing-auta-z-niemiec/) | leasing auta z Niemiec / VAT marża | NISKA | NEW | dodano 2026-05-05 — luka konkurencji |
+| 26 | [Pożyczka leasingowa vs leasing](/blog/pozyczka-leasingowa-vs-leasing/) | pożyczka leasingowa | NISKA | NEW | dodano 2026-05-05 — fraza dla nie-VATowca |
+| 27 | [Wakacje leasingowe](/blog/wakacje-leasingowe-zawieszenie-rat/) | wakacje leasingowe / zawieszenie rat leasingu | NISKA | NEW | dodano 2026-05-05 |
+| 28 | [Raty stałe czy zmienne 2026](/blog/raty-stale-czy-zmienne-2026/) | raty stałe czy zmienne | ŚREDNIA | NEW | dodano 2026-05-05 — wymaga aktualizacji co kwartał |
 
 ---
 
@@ -95,6 +99,10 @@ Pozycje z GSC 2026-05-02 (ostatnie 3 miesiące, Polska only). "—" = brak wyśw
 ### Średni priorytet
 - ~~leasing maszyn budowlanych~~ — pokryte 2026-05-02 (/leasing/maszyny/budowlane/)
 - ~~leasing ciągnika rolniczego~~ — pokryte 2026-05-02 (/leasing/maszyny/rolnicze/)
+- ~~leasing auta z Niemiec / VAT marża~~ — pokryte 2026-05-05 (/blog/leasing-auta-z-niemiec/)
+- ~~pożyczka leasingowa vs leasing~~ — pokryte 2026-05-05 (/blog/pozyczka-leasingowa-vs-leasing/)
+- ~~wakacje leasingowe / zawieszenie rat~~ — pokryte 2026-05-05 (/blog/wakacje-leasingowe-zawieszenie-rat/)
+- ~~raty stałe czy zmienne~~ — pokryte 2026-05-05 (/blog/raty-stale-czy-zmienne-2026/)
 - leasing wózka widłowego — kandydat na kolejną wertykalę pod /leasing/maszyny/
 - leasing samochodu dostawczego (osobna strona — odróżnić od osobowych)
 - leasing dla branży transportowej (ciągnik siodłowy, naczepa)
